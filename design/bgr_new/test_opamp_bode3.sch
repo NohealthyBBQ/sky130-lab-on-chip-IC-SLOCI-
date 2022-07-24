@@ -47,8 +47,10 @@ C {devices/code.sym} 400 -540 0 0 {name=SIM only_toplevel=false value="
 
 .control
 ac dec 10 1 10G
-plot vdb(Vout)
-plot ph(Vout)
+let phase = 180/PI*vp(Vout)
+
+plot vdb(Vout) phase
+
 .endc
 
 .save all
