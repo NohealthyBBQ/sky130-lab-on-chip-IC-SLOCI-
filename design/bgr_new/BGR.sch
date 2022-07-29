@@ -1,28 +1,10 @@
-v {xschem version=3.0.0 file_version=1.2 
-
-* Copyright 2021 Stefan Frederik Schippers
-* 
-* Licensed under the Apache License, Version 2.0 (the "License");
-* you may not use this file except in compliance with the License.
-* You may obtain a copy of the License at
-*
-*     https://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing, software
-* distributed under the License is distributed on an "AS IS" BASIS,
-* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-* See the License for the specific language governing permissions and
-* limitations under the License.
-
-}
+v {xschem version=3.0.0 file_version=1.2 }
 G {}
 K {}
 V {}
 S {}
 E {}
 N 400 -350 400 -240 {
-lab=Vneg}
-N 400 -570 400 -350 {
 lab=Vneg}
 N 660 -200 660 -120 {
 lab=#net1}
@@ -120,16 +102,6 @@ N 1380 -60 1380 -10 {
 lab=GND}
 N 1380 -200 1380 -120 {
 lab=VDD}
-N 400 -340 480 -340 {
-lab=Vneg}
-N 480 -370 480 -340 {
-lab=Vneg}
-N 560 -330 660 -330 {
-lab=Vpos}
-N 560 -370 560 -330 {
-lab=Vpos}
-N 600 -430 640 -430 {
-lab=Vbias}
 N 1490 -60 1490 -10 {
 lab=GND}
 N 1490 -200 1490 -120 {
@@ -149,25 +121,25 @@ lab=VDD}
 N 1090 -760 1170 -760 {
 lab=VDD}
 N 400 -960 400 -570 {
-lab=Vneg}
+lab=#net5}
 N 520 -920 520 -530 {
 lab=Vout}
 N 660 -960 660 -790 {
-lab=#net5}
-N 660 -730 660 -570 {
-lab=Vpos}
-N 890 -960 890 -790 {
 lab=#net6}
+N 660 -730 660 -570 {
+lab=#net7}
+N 890 -960 890 -790 {
+lab=#net8}
 N 890 -730 890 -570 {
 lab=#net3}
 N 1090 -960 1090 -790 {
-lab=#net7}
+lab=#net9}
 N 1090 -730 1090 -570 {
 lab=#net4}
 N 140 -1080 400 -1080 {
 lab=VDD}
 N 150 -950 150 -120 {
-lab=#net8}
+lab=#net10}
 N 150 -1080 150 -1010 {
 lab=VDD}
 N -170 -10 320 -10 {
@@ -181,11 +153,11 @@ lab=VDD}
 N -150 -1080 -150 -860 {
 lab=VDD}
 N -110 -90 110 -90 {
-lab=#net8}
+lab=#net10}
 N 10 -220 10 -90 {
-lab=#net8}
+lab=#net10}
 N 10 -220 150 -220 {
-lab=#net8}
+lab=#net10}
 N 1010 -760 1010 -660 {
 lab=Vcas}
 N 810 -760 810 -660 {
@@ -228,11 +200,27 @@ N -240 -90 -240 -10 {
 lab=GND}
 N -240 -10 -170 -10 {
 lab=GND}
-N 660 -570 660 -490 {
-lab=Vpos}
 N 660 -430 660 -350 {
 lab=Vpos}
 N 660 -490 660 -430 {
+lab=Vpos}
+N 500 -360 500 -320 {
+lab=Vneg}
+N 400 -320 500 -320 {
+lab=Vneg}
+N 540 -360 540 -320 {
+lab=Vpos}
+N 540 -320 660 -320 {
+lab=Vpos}
+N 430 -460 460 -460 {
+lab=GND}
+N 600 -460 640 -460 {
+lab=VDD}
+N 600 -430 640 -430 {
+lab=Vbias}
+N 400 -510 400 -350 {
+lab=Vneg}
+N 660 -510 660 -490 {
 lab=Vpos}
 C {sky130_fd_pr/pnp_05v5.sym} 380 -90 0 0 {name=Q1
 model=pnp_05v5_W3p40L3p40
@@ -300,16 +288,33 @@ C {code.sym} 1690 -520 0 0 {name=commands only_toplevel=false value="
 *** plot vbgp with variation in temperature @3.3V
 *Vdd VDD GND 3.3
 *V_en en GND 3.3
-*.dc temp -40 100 1 Rt 4k 6k 1k
-.dc temp -40 100 1
+*.dc temp -40 100 1 Rt 100 20k 1k
+*.dc temp -40 100 1
 
+.option
 .control
+let startR = 16k
+let endR = 17k
+let incre = 100
+let curR = startR
+while curR le endR
+alter Rt curR
+dc temp -40 100 1
+write dc.out Vout
+set appendwrite
+let curR = curR + incre
+end
 run
 *print V(VE)
 *plot V(VE)
 *plot deriv(V(VE))/1.202344
-plot V(Vout) V(Vcas) V(Vpos) V(Vneg)
-plot deriv(V(Vout))/1.202344
+*plot V(Vout) V(Vcas) V(Vpos) V(Vneg)
+*plot V(Vout)
+*plot deriv(V(Vout))/1.202344
+
+plot dc1.Vout dc2.Vout dc3.Vout dc4.Vout dc5.Vout dc6.Vout dc7.Vout dc8.Vout dc9.Vout dc10.Vout 
+*dc11.Vout dc12.Vout dc13.Vout dc14.Vout dc15.Vout
+
 .endc
 
 *** plot voltage coefficient
@@ -342,8 +347,6 @@ plot deriv(V(Vout))/1.202344
 *plot -I(VDD)
 *.endc
 "}
-C {sky130_tests/n_diffamp.sym} 520 -450 3 0 {name=x1}
-C {lab_wire.sym} 640 -430 0 0 {name=l8 sig_type=std_logic lab=Vbias}
 C {vsource.sym} 1490 -90 0 0 {name=VB value=0.7}
 C {lab_wire.sym} 1490 -180 0 0 {name=l9 sig_type=std_logic lab=Vbias}
 C {lab_wire.sym} 780 -900 0 0 {name=l10 sig_type=std_logic lab=Vout}
@@ -509,3 +512,17 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_lvt
 spiceprefix=X
 }
+C {opamp/opamp.sym} 520 -460 1 1 {name=x1}
+C {lab_wire.sym} 450 -460 0 0 {name=l8 sig_type=std_logic lab=GND}
+C {lab_wire.sym} 640 -460 0 0 {name=l19 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} 640 -430 0 0 {name=l20 sig_type=std_logic lab=Vbias}
+C {res.sym} 660 -540 0 0 {name=Rt2
+value=100
+footprint=1206
+device=resistor
+m=1}
+C {res.sym} 400 -540 0 0 {name=Rt3
+value=100
+footprint=1206
+device=resistor
+m=1}
