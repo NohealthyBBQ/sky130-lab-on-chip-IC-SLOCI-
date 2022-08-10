@@ -7,10 +7,9 @@ E {}
 N 390 -100 390 -0 { lab=GND}
 N 460 -160 500 -160 { lab=Vout}
 N 240 -140 290 -140 { lab=#net1}
-N 360 -260 360 -240 { lab=#net2}
-N 390 -360 390 -240 { lab=#net3}
-N -0 -360 390 -360 { lab=#net3}
-N -0 -360 0 -200 { lab=#net3}
+N 390 -360 390 -240 { lab=#net2}
+N -0 -360 390 -360 { lab=#net2}
+N -0 -360 0 -200 { lab=#net2}
 N 0 -140 0 -0 { lab=GND}
 N 0 -0 390 -0 { lab=GND}
 N 120 -140 120 -110 { lab=#net1}
@@ -19,7 +18,6 @@ N 120 -50 120 0 { lab=GND}
 N 60 -180 60 -140 { lab=Vin}
 N 60 -180 290 -180 { lab=Vin}
 N 60 -80 60 -0 { lab=GND}
-N 360 -360 360 -320 { lab=#net3}
 N 500 -160 560 -160 {
 lab=Vout}
 N 560 -160 560 -140 {
@@ -33,10 +31,17 @@ lab=#net1}
 N 560 -240 560 -160 {
 lab=Vout}
 N 560 -340 560 -300 {
-lab=#net4}
+lab=#net3}
 N 560 -450 560 -400 {
 lab=Vin}
-C {devices/isource.sym} 360 -290 0 1 {name=I0 value=10u}
+N -100 -140 -100 -0 {
+lab=GND}
+N -100 -0 0 0 {
+lab=GND}
+N -100 -260 -100 -200 {
+lab=Vbias}
+N 360 -280 360 -240 {
+lab=Vbias}
 C {devices/vsource.sym} 0 -170 0 0 {name=V1 value=1.8}
 C {devices/vsource.sym} 120 -80 0 0 {name=V2 value=0.9
 }
@@ -71,7 +76,6 @@ footprint=1206
 device="ceramic capacitor"}
 C {lab_wire.sym} 190 -180 0 0 {name=l3 sig_type=std_logic lab=Vin
 }
-C {opamp/opamp.sym} 390 -160 0 0 {name=x1}
 C {ind.sym} 560 -270 0 0 {name=L1
 m=1
 value=10G
@@ -83,4 +87,10 @@ footprint=1206
 device=resistor
 m=1}
 C {lab_wire.sym} 560 -430 0 0 {name=l4 sig_type=std_logic lab=Vin
+}
+C {design/opamp/opamp_realcomp.sym} 390 -160 0 0 {name=x1}
+C {devices/vsource.sym} -100 -170 0 0 {name=V4 value=0.7}
+C {lab_wire.sym} -100 -250 0 0 {name=l5 sig_type=std_logic lab=Vbias
+}
+C {lab_wire.sym} 360 -270 0 0 {name=l6 sig_type=std_logic lab=Vbias
 }
