@@ -1,0 +1,22 @@
+Because we have to add bond wire/probes to the circuit to test DC Operating Point and AC Behavior, we don't want extra capacitance or resistance from pads/wire influence our real AC behavior though pads/wire doesn't influence DC. 
+
+Therefore, We need to build three test circuits. 
+
+The first is to test DC operating point of CMFB, AMPs, Offset Cancellation feedback and check if all biasing point is correct and accurate. If CMFB and Offset cancellation work well, CM voltage will be close to 1.25V at all amp's input and output and DC offset at output should be smaller than 10mV. Also, we have to check if CMFB/offset cancellation is stable under DC. If biasing point is wrong or not stable, we can check which part doesn't func. 
+
+      Probe voltage measure point(range from VSS to VDD): Vcmfb_bias x1, Vcm_reference x1, Vcm x10, Vcm_cntrl x10, vdrain x10, vsource x10, vinp x6, vinn x6, vfbp x1, vfbn x1, vin0p x1(ext), vin0n x1(ext), voffset_bias_1st_stage x1, voffset_bias_buffer x1 
+      Power Input: 1.25V Voltage reference x1, 20uA current source x2, 200uA current source x1, 1.8V VDD, VSS(GND)
+      I/O: Vinp, Vinn, Vcntrl_sw(switch between VSS and VDD), voutp, voutn, ext_offset_cap x2
+      
+
+The second is to test AC behavior of offset cancellation and CMFB because we have to check if the circuit is stable under AC input and if not stable, which part of circuit create unstable signal. If circuit runs well, the feedback from output buffer and filter should be close to DC(and some ac but much smaller than input ac level) and CMFB won't create unstable satuaration to VDD. 
+
+      Probe voltage measure point(range from VSS to VDD): first two stages' drain x8, first two stages' source x4, vcmfb_bias x1, first two stage control voltage x4, vin0p(ext), vinon(ext)
+      Power Input: 1.25V Voltage reference x1, 20uA current source x2, 200uA current source x1, 1.8V VDD, VSS(GND)
+      I/O: Vinp, Vinn, Vcntrl_sw(switch between VSS and VDD), voutp, voutn, ext_offset_cap x2 
+
+The third circuit doesn't contain any probe insides the circuit but only at input and output so that we can measure the real behavior of the circuit. 
+
+      Probe point: input, output
+      Power Input: 1.25V Voltage reference x1, 20uA current source x2, 200uA current source x1, 1.8V VDD, VSS(GND)
+      I/O: Vinp, Vinn, Vcntrl_sw(switch between VSS and VDD), voutp, voutn, ext_offset_cap x2
