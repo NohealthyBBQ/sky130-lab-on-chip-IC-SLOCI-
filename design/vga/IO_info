@@ -20,3 +20,10 @@ The third circuit doesn't contain any probe insides the circuit but only at inpu
       Probe point: input, output
       Power Input: 1.25V Voltage reference x1, 20uA current source x2, 200uA current source x1, 1.8V VDD, VSS(GND)
       I/O: Vinp, Vinn, Vcntrl_sw(switch between VSS and VDD), voutp, voutn, ext_offset_cap x2
+      
+ Five largest device: 
+      1. nmos: W = 1um L = 0.15um NF =172 (tot:11)
+      2. capacitor: w = 25um L = 25um (tot:40)
+      3. nmos: w = 1um L = 0.15um NF = 61 (tot: 22)
+      4. resistor: w = 5.73um L = 7.5um (tot: 10)
+      5. resistor: w = 5.73um L = 2.96um (tot: 22)
