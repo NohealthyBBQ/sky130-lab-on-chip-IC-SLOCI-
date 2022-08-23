@@ -44,43 +44,13 @@ value="
 "
 spice_ignore=false}
 C {devices/vsource.sym} 830 -210 0 0 {name=V1 net_name=true 
-*value="'VDD' pwl 0us 0 1us 'VDD'"
-value=1.8}
+value="'VDD' pwl 0us 0 1us 'VDD'"
+*value=1.8}
 C {devices/vdd.sym} 830 -240 0 0 {name=l9 lab=VDD}
 C {devices/gnd.sym} 830 -180 0 0 {name=l22 lab=GND}
 C {devices/vsource.sym} 830 -100 0 0 {name=V2 net_name=true value="0 pulse(0V 1.8V 10us 0us 0us 5us)"}
 C {devices/gnd.sym} 830 -70 0 0 {name=l12 lab=GND}
 C {devices/lab_pin.sym} 830 -130 0 0 {name=l23 lab=porst}
-C {devices/code_shown.sym} -240 -570 0 0 {name=NGSPICE3
-only_toplevel=true
-spice_ignore=false
-value="
-.option savecurrents
-.option warn=1
-.dc temp -20 100 1
-.control
-save all
-
-run
-plot Vbg
-plot deriv(Vbg)
-
-
-plot vm1#branch
-plot deriv(vm1#branch)
-
-plot v.x1.vm5#branch
-plot deriv(v.x1.vm5#branch)
-
-save vbg deriv(vbg)
-
-
-
-
-unset askquit
-*quit
-.endc
-" }
 C {devices/vdd.sym} 230 -270 0 0 {name=l1 lab=VDD}
 C {devices/gnd.sym} 230 -60 0 0 {name=l2 lab=GND}
 C {devices/lab_pin.sym} 140 -160 0 0 {name=l3 lab=porst}
@@ -105,3 +75,24 @@ C {devices/vdd.sym} 490 -510 0 0 {name=l7 lab=VDD}
 C {devices/ammeter.sym} 490 -250 0 0 {name=Vm1 current=40e-6}
 C {noconn.sym} 340 -240 1 0 {name=l8}
 C {bgr_new/BGR.sym} 10 -40 0 0 {name=X1}
+C {devices/code_shown.sym} -180 -410 0 0 {name=s2 
+only_toplevel=true 
+spice_ignore=false
+
+value="
+.option savecurrents
+
+.param VDD=1.8
+.control
+save all
+
+run
+option temp=27
+tran 0.1n 20u
+plot VDD Vbg porst
+plot vm1#branch
+
+unset askquit
+
+.endc
+"}
