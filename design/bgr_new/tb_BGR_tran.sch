@@ -90,7 +90,7 @@ run
 option temp=27
 tran 0.1n 20u
 plot VDD Vbg porst
-plot vm1#branch
+plot v.x1.vm5#branch
 
 unset askquit
 
