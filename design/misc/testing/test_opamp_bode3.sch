@@ -71,7 +71,7 @@ C {lab_wire.sym} 500 -160 0 0 {name=l1 sig_type=std_logic lab=Vout
 }
 C {capa.sym} 560 -110 0 0 {name=C1
 m=1
-value=200f
+value=2p
 footprint=1206
 device="ceramic capacitor"}
 C {lab_wire.sym} 190 -180 0 0 {name=l3 sig_type=std_logic lab=Vin
@@ -88,9 +88,9 @@ device=resistor
 m=1}
 C {lab_wire.sym} 560 -430 0 0 {name=l4 sig_type=std_logic lab=Vin
 }
-C {design/opamp/opamp_realcomp.sym} 390 -160 0 0 {name=x1}
 C {devices/vsource.sym} -100 -170 0 0 {name=V4 value=0.7}
 C {lab_wire.sym} -100 -250 0 0 {name=l5 sig_type=std_logic lab=Vbias
 }
 C {lab_wire.sym} 360 -270 0 0 {name=l6 sig_type=std_logic lab=Vbias
 }
+C {design/opamp/opamp_realcomp2.sym} 390 -160 0 0 {name=x1}
