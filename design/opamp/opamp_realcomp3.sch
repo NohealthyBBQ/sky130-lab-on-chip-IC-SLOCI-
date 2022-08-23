@@ -182,8 +182,4 @@ L=13
 model=res_high_po
 spiceprefix=X
 mult=1}
-C {capa.sym} 690 -220 0 0 {name=C1
-m=1
-value=700f
-footprint=1206
-device="ceramic capacitor"}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 690 -220 0 0 {name=C1 model=cap_mim_m3_1 W=16 L=21.4 MF=1 spiceprefix=X}
