@@ -1,0 +1,64 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1661518764
+<< checkpaint >>
+rect -1313 -1031 6406 3689
+<< error_s >>
+rect 3624 15155 3659 15189
+rect 3625 15136 3659 15155
+rect 2939 12806 2973 12824
+rect 468 4515 503 4549
+rect 469 4496 503 4515
+rect 488 583 503 4496
+rect 522 4462 557 4496
+rect 522 583 556 4462
+rect 522 549 537 583
+rect 1027 530 1042 4496
+rect 1061 530 1095 4550
+rect 1061 496 1076 530
+rect 2166 477 2181 10351
+rect 2200 477 2234 10405
+rect 2200 443 2215 477
+rect 2903 424 2973 12806
+rect 2903 388 2956 424
+rect 3644 371 3659 15136
+rect 3678 15102 3713 15136
+rect 3678 371 3712 15102
+rect 3678 337 3693 371
+rect 4383 318 4398 15136
+rect 4417 318 4451 15190
+rect 4417 284 4432 318
+use sky130_fd_pr__cap_mim_m3_1_DYA2DF  XC1
+timestamp 0
+transform 1 0 2547 0 1 1329
+box -2600 -1100 2599 1100
+use sky130_fd_pr__nfet_01v8_lvt_BXBAAE  XM_actload
+timestamp 0
+transform 1 0 2560 0 1 6597
+box -396 -6209 396 6209
+use sky130_fd_pr__pfet_01v8_lvt_NRPGUE  XM_cs
+timestamp 0
+transform 1 0 4627 0 1 37234
+box -246 -37005 246 37005
+use sky130_fd_pr__nfet_01v8_lvt_4AAQL4  XM_diff_n
+timestamp 0
+transform 1 0 243 0 1 2566
+box -296 -2019 296 2019
+use sky130_fd_pr__nfet_01v8_lvt_4AAQL4  XM_diff_n1
+timestamp 0
+transform 1 0 782 0 1 2513
+box -296 -2019 296 2019
+use sky130_fd_pr__pfet_01v8_lvt_9LPPNM  XM_ppair_p
+timestamp 0
+transform 1 0 3299 0 1 7780
+box -396 -7445 396 7445
+use sky130_fd_pr__pfet_01v8_lvt_9LPPNM  XM_ppair_p1
+timestamp 0
+transform 1 0 4038 0 1 7727
+box -396 -7445 396 7445
+use sky130_fd_pr__nfet_01v8_lvt_XSXBWZ  XM_tail
+timestamp 0
+transform 1 0 1621 0 1 5414
+box -596 -4973 596 4973
+<< end >>

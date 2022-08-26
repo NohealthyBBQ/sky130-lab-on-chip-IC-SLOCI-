@@ -523,7 +523,7 @@ spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_high_po.sym} 0 -300 0 0 {name=R4
 W=2
-L=61.75
+L=61.9
 model=res_high_po
 spiceprefix=X
 mult=1}
@@ -785,5 +785,5 @@ C {devices/lab_pin.sym} 1340 -130 0 0 {name=l20 lab=voutb2}
 C {opin.sym} 1400 -200 0 0 {name=p5 lab=Iout2}
 C {ipin.sym} -250 -880 0 0 {name=p6 lab=porst}
 C {opin.sym} 140 -400 0 0 {name=p7 lab=Vbg}
-C {opamp/opamp_realcomp2.sym} -740 -460 1 1 {name=x1}
 C {opamp/opamp_realcomp3.sym} 440 -420 0 0 {name=x2}
+C {opamp/opamp_realcomp3.sym} -740 -460 1 1 {name=x1}
