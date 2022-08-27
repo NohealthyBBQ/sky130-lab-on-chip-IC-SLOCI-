@@ -608,7 +608,7 @@ C {devices/lab_pin.sym} 600 -470 0 0 {name=l21 lab=vcurrent_gate}
 C {devices/lab_pin.sym} 660 -270 0 1 {name=l29 lab=vfeedback}
 C {sky130_fd_pr/res_high_po.sym} 660 -100 0 0 {name=R2
 W=2
-L=224
+L=223.5
 model=res_high_po
 spiceprefix=X
 mult=1}
@@ -785,5 +785,5 @@ C {devices/lab_pin.sym} 1340 -130 0 0 {name=l20 lab=voutb2}
 C {opin.sym} 1400 -200 0 0 {name=p5 lab=Iout2}
 C {ipin.sym} -250 -880 0 0 {name=p6 lab=porst}
 C {opin.sym} 140 -400 0 0 {name=p7 lab=Vbg}
-C {opamp/opamp_realcomp3.sym} 440 -420 0 0 {name=x2}
-C {opamp/opamp_realcomp3.sym} -740 -460 1 1 {name=x1}
+C {opamp/opamp_realcomp3_usefinger.sym} -740 -460 1 1 {name=x1}
+C {opamp/opamp_realcomp3_usefinger.sym} 440 -420 0 0 {name=x2}
