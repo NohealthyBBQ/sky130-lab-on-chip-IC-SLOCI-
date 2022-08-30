@@ -1,0 +1,14 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1661880638
+<< metal1 >>
+rect 147 4174 2293 4220
+rect 147 2809 2293 2855
+rect 147 1444 2293 1490
+rect 147 79 2293 125
+use sky130_fd_pr__pfet_01v8_lvt_D74VRS  sky130_fd_pr__pfet_01v8_lvt_D74VRS_0
+timestamp 1661879915
+transform 1 0 1220 0 1 2778
+box -1273 -2831 1273 2831
+<< end >>
