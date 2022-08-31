@@ -1,0 +1,57 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1661911743
+<< metal1 >>
+rect 750 370 760 460
+rect 870 370 880 460
+rect 1270 370 1280 460
+rect 1390 370 1400 460
+rect 1316 360 1322 370
+rect 1356 360 1362 370
+rect 240 60 250 150
+rect 360 60 370 150
+rect 1790 60 1800 150
+rect 1910 60 1920 150
+rect 70 -30 4140 20
+rect 70 -360 4140 -310
+<< via1 >>
+rect 760 370 870 460
+rect 1280 370 1390 460
+rect 250 60 360 150
+rect 1800 60 1910 150
+<< metal2 >>
+rect 760 460 870 470
+rect 760 360 870 370
+rect 1280 460 1390 470
+rect 1280 360 1390 370
+rect 250 150 360 160
+rect 250 50 360 60
+rect 1800 150 1910 160
+rect 1800 50 1910 60
+use sky130_fd_pr__pfet_01v8_lvt_B64SAM  sky130_fd_pr__pfet_01v8_lvt_B64SAM_0
+timestamp 1661909013
+transform 1 0 2109 0 1 224
+box -2129 -264 2129 298
+use sky130_fd_pr__pfet_01v8_lvt_MBDTEX  sky130_fd_pr__pfet_01v8_lvt_MBDTEX_0
+timestamp 1661909182
+transform 1 0 2109 0 1 -562
+box -2129 -298 2129 264
+<< labels >>
+flabel space 220 -1160 380 -980 0 FreeSans 1600 0 0 0 B
+flabel space 720 -1160 880 -980 0 FreeSans 1600 0 0 0 A
+flabel space 1240 -1160 1400 -980 0 FreeSans 1600 0 0 0 A
+flabel space 1760 -1160 1920 -980 0 FreeSans 1600 0 0 0 B
+flabel space 2280 -1160 2440 -980 0 FreeSans 1600 0 0 0 B
+flabel space 2780 -1160 2940 -980 0 FreeSans 1600 0 0 0 A
+flabel space 3300 -1160 3460 -980 0 FreeSans 1600 0 0 0 A
+flabel space 3820 -1160 3980 -980 0 FreeSans 1600 0 0 0 B
+flabel space 240 648 400 828 0 FreeSans 1600 0 0 0 A
+flabel space 740 648 900 828 0 FreeSans 1600 0 0 0 B
+flabel space 1260 648 1420 828 0 FreeSans 1600 0 0 0 B
+flabel space 1760 648 1920 828 0 FreeSans 1600 0 0 0 A
+flabel space 2280 648 2440 828 0 FreeSans 1600 0 0 0 A
+flabel space 2800 648 2960 828 0 FreeSans 1600 0 0 0 B
+flabel space 3320 648 3480 828 0 FreeSans 1600 0 0 0 B
+flabel space 3820 648 3980 828 0 FreeSans 1600 0 0 0 A
+<< end >>
