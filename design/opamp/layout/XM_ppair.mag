@@ -1,8 +1,87 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1662060890
+timestamp 1662065010
+<< nwell >>
+rect -220 -1060 4440 720
+<< nsubdiff >>
+rect -140 580 520 640
+rect 860 580 1300 640
+rect 1640 580 2580 640
+rect 2920 580 3360 640
+rect 3700 580 4360 640
+rect -140 460 -80 580
+rect -140 -140 -80 60
+rect 4300 460 4360 580
+rect 4300 -140 4360 60
+rect -140 -200 520 -140
+rect 860 -200 1300 -140
+rect 1640 -200 2580 -140
+rect 2920 -200 3360 -140
+rect 3700 -200 4360 -140
+rect -140 -400 -80 -200
+rect -140 -920 -80 -800
+rect 4300 -400 4360 -200
+rect 4300 -920 4360 -800
+rect -140 -980 520 -920
+rect 860 -980 1300 -920
+rect 1640 -980 2580 -920
+rect 2920 -980 3360 -920
+rect 3700 -980 4360 -920
+<< nsubdiffcont >>
+rect 520 580 860 640
+rect 1300 580 1640 640
+rect 2580 580 2920 640
+rect 3360 580 3700 640
+rect -140 60 -80 460
+rect 4300 60 4360 460
+rect 520 -200 860 -140
+rect 1300 -200 1640 -140
+rect 2580 -200 2920 -140
+rect 3360 -200 3700 -140
+rect -140 -800 -80 -400
+rect 4300 -800 4360 -400
+rect 520 -980 860 -920
+rect 1300 -980 1640 -920
+rect 2580 -980 2920 -920
+rect 3360 -980 3700 -920
+<< locali >>
+rect -140 580 520 640
+rect 860 580 1300 640
+rect 1640 580 2580 640
+rect 2920 580 3360 640
+rect 3700 580 4360 640
+rect -140 460 -80 580
+rect -140 -140 -80 60
+rect 4300 460 4360 580
+rect 4300 -140 4360 60
+rect -140 -200 520 -140
+rect 860 -200 1300 -140
+rect 1640 -200 2580 -140
+rect 2920 -200 3360 -140
+rect 3700 -200 4360 -140
+rect -140 -400 -80 -200
+rect -140 -920 -80 -800
+rect 4300 -400 4360 -200
+rect 4300 -920 4360 -800
+rect -140 -980 520 -920
+rect 860 -980 1300 -920
+rect 1640 -980 2580 -920
+rect 2920 -980 3360 -920
+rect 3700 -980 4360 -920
+<< viali >>
+rect 520 580 860 640
+rect 1300 580 1640 640
+rect 2580 580 2920 640
+rect 3360 580 3700 640
 << metal1 >>
+rect -140 640 4360 646
+rect -140 580 520 640
+rect 860 580 1300 640
+rect 1640 580 2580 640
+rect 2920 580 3360 640
+rect 3700 580 4360 640
+rect -140 574 4360 580
 rect 750 370 760 460
 rect 870 370 880 460
 rect 1270 370 1280 460
@@ -249,20 +328,20 @@ timestamp 1661909182
 transform 1 0 2109 0 1 -562
 box -2129 -298 2129 264
 << labels >>
-flabel space 220 -1160 380 -980 0 FreeSans 1600 0 0 0 B
-flabel space 720 -1160 880 -980 0 FreeSans 1600 0 0 0 A
-flabel space 1240 -1160 1400 -980 0 FreeSans 1600 0 0 0 A
-flabel space 1760 -1160 1920 -980 0 FreeSans 1600 0 0 0 B
-flabel space 2280 -1160 2440 -980 0 FreeSans 1600 0 0 0 B
-flabel space 2780 -1160 2940 -980 0 FreeSans 1600 0 0 0 A
-flabel space 3300 -1160 3460 -980 0 FreeSans 1600 0 0 0 A
-flabel space 3820 -1160 3980 -980 0 FreeSans 1600 0 0 0 B
-flabel space 240 648 400 828 0 FreeSans 1600 0 0 0 A
-flabel space 740 648 900 828 0 FreeSans 1600 0 0 0 B
-flabel space 1260 648 1420 828 0 FreeSans 1600 0 0 0 B
-flabel space 1760 648 1920 828 0 FreeSans 1600 0 0 0 A
-flabel space 2280 648 2440 828 0 FreeSans 1600 0 0 0 A
-flabel space 2800 648 2960 828 0 FreeSans 1600 0 0 0 B
-flabel space 3320 648 3480 828 0 FreeSans 1600 0 0 0 B
-flabel space 3820 648 3980 828 0 FreeSans 1600 0 0 0 A
+flabel nwell 220 -1160 380 -980 0 FreeSans 1600 0 0 0 B
+flabel nwell 720 -1160 880 -980 0 FreeSans 1600 0 0 0 A
+flabel nwell 1240 -1160 1400 -980 0 FreeSans 1600 0 0 0 A
+flabel nwell 1760 -1160 1920 -980 0 FreeSans 1600 0 0 0 B
+flabel nwell 2280 -1160 2440 -980 0 FreeSans 1600 0 0 0 B
+flabel nwell 2780 -1160 2940 -980 0 FreeSans 1600 0 0 0 A
+flabel nwell 3300 -1160 3460 -980 0 FreeSans 1600 0 0 0 A
+flabel nwell 3820 -1160 3980 -980 0 FreeSans 1600 0 0 0 B
+flabel nwell 240 648 400 828 0 FreeSans 1600 0 0 0 A
+flabel nwell 740 648 900 828 0 FreeSans 1600 0 0 0 B
+flabel nwell 1260 648 1420 828 0 FreeSans 1600 0 0 0 B
+flabel nwell 1760 648 1920 828 0 FreeSans 1600 0 0 0 A
+flabel nwell 2280 648 2440 828 0 FreeSans 1600 0 0 0 A
+flabel nwell 2800 648 2960 828 0 FreeSans 1600 0 0 0 B
+flabel nwell 3320 648 3480 828 0 FreeSans 1600 0 0 0 B
+flabel nwell 3820 648 3980 828 0 FreeSans 1600 0 0 0 A
 << end >>
