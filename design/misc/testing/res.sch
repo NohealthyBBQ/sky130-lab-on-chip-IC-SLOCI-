@@ -22,6 +22,24 @@ N -180 -40 -180 40 {
 lab=GND}
 N -180 40 -130 40 {
 lab=GND}
+N -440 -100 -440 -60 {
+lab=Vout_res_test}
+N -440 0 -440 50 {
+lab=GND}
+N -440 50 -270 50 {
+lab=GND}
+N -270 -200 -270 50 {
+lab=GND}
+N -440 -200 -270 -200 {
+lab=GND}
+N -440 -200 -440 -160 {
+lab=GND}
+N -490 -30 -460 -30 {
+lab=GND}
+N -490 -30 -490 50 {
+lab=GND}
+N -490 50 -440 50 {
+lab=GND}
 C {isource.sym} -130 -140 0 0 {name=I1 value=1u}
 C {lab_wire.sym} -130 -90 0 0 {name=l3 sig_type=std_logic lab=Vout_res}
 C {sky130_fd_pr/corner.sym} 130 -230 0 0 {name=CORNER only_toplevel=true corner=tt}
@@ -34,15 +52,24 @@ C {devices/code.sym} 130 -80 0 0 {name=sIM only_toplevel=false value="
 .save all
 .control
 run
-plot Vout_res
-plot deriv(Vout_res)
+plot Vout_res Vout_res_test
+plot deriv(Vout_res) deriv(Vout_res_test)
 .endc
 
 "}
 C {gnd.sym} -80 40 0 0 {name=l1 lab=GND}
 C {sky130_fd_pr/res_high_po.sym} -130 -40 0 0 {name=R3
-W=4
-L=24.5
+W=3
+L=13
 model=res_high_po
+spiceprefix=X
+mult=1}
+C {isource.sym} -440 -130 0 0 {name=I2 value=1u}
+C {lab_wire.sym} -440 -80 0 0 {name=l2 sig_type=std_logic lab=Vout_res_test}
+C {gnd.sym} -390 50 0 0 {name=l4 lab=GND}
+C {sky130_fd_pr/res_high_po_2p85.sym} -440 -30 0 0 {name=R1
+W=2.85
+L=12.1
+model=res_high_po_2p85
 spiceprefix=X
 mult=1}

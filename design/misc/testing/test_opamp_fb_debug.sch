@@ -93,4 +93,4 @@ C {lab_wire.sym} -100 -250 0 0 {name=l5 sig_type=std_logic lab=Vbias
 }
 C {lab_wire.sym} 360 -270 0 0 {name=l6 sig_type=std_logic lab=Vbias
 }
-C {design/opamp/opamp_realcomp3.sym} 390 -160 0 0 {name=x1}
+C {opamp/opamp_realcomp3_usefinger.sym} 390 -160 0 0 {name=x1}

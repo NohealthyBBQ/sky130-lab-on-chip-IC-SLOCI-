@@ -176,10 +176,10 @@ C {devices/ipin.sym} 300 -200 0 0 {name=p3 lab=in_n}
 C {devices/ipin.sym} 600 -200 0 1 {name=p4 lab=in_p}
 C {devices/opin.sym} 810 -200 0 0 {name=p5 lab=out}
 C {devices/ipin.sym} 300 -110 0 0 {name=p6 lab=bias_0p7}
-C {sky130_fd_pr/res_high_po.sym} 720 -150 1 0 {name=R1
-W=3
-L=13
-model=res_high_po
+C {sky130_fd_pr/cap_mim_m3_1.sym} 690 -220 0 0 {name=C1 model=cap_mim_m3_1 W=16 L=21.4 MF=1 spiceprefix=X}
+C {sky130_fd_pr/res_high_po_2p85.sym} 720 -150 1 0 {name=R1
+W=2.85
+L=12.1
+model=res_high_po_2p85
 spiceprefix=X
 mult=1}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 690 -220 0 0 {name=C1 model=cap_mim_m3_1 W=16 L=21.4 MF=1 spiceprefix=X}
