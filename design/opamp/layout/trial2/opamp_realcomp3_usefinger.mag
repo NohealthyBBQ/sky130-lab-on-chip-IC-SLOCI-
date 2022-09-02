@@ -1,0 +1,68 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1662078939
+<< checkpaint >>
+rect -1313 -1031 4706 5969
+<< error_s >>
+rect 468 5151 503 5185
+rect 469 5132 503 5151
+rect 488 583 503 5132
+rect 522 5098 557 5132
+rect 522 583 556 5098
+rect 6150 3081 6184 3099
+rect 6150 3045 6220 3081
+rect 6167 3011 6238 3045
+rect 7462 3011 7497 3045
+rect 1008 1843 1042 1897
+rect 522 549 537 583
+rect 1027 530 1042 1843
+rect 1061 1809 1096 1843
+rect 1061 530 1095 1809
+rect 1061 496 1076 530
+rect 3598 477 3613 1843
+rect 3632 477 3666 1897
+rect 3632 443 3647 477
+rect 6167 424 6237 3011
+rect 7463 2992 7497 3011
+rect 6167 388 6220 424
+rect 7482 371 7497 2992
+rect 7516 2958 7551 2992
+rect 7516 371 7550 2958
+rect 7516 337 7531 371
+rect 8795 318 8810 2992
+rect 8829 318 8863 3046
+rect 8829 284 8844 318
+use sky130_fd_pr__cap_mim_m3_1_EN3Q86  XC1
+timestamp 0
+transform 1 0 1697 0 1 2469
+box -1750 -2240 1749 2240
+use sky130_fd_pr__nfet_01v8_lvt_3ND82L  XM_actload
+timestamp 0
+transform 1 0 4908 0 1 2125
+box -1312 -1737 1312 1737
+use sky130_fd_pr__pfet_01v8_lvt_ER3WTS  XM_cs
+timestamp 0
+transform 1 0 10066 0 1 3202
+box -1273 -2973 1273 2973
+use sky130_fd_pr__nfet_01v8_lvt_BRDQL2  XM_diff_n
+timestamp 0
+transform 1 0 243 0 1 2884
+box -296 -2337 296 2337
+use sky130_fd_pr__nfet_01v8_lvt_BRDQL2  XM_diff_n1
+timestamp 0
+transform 1 0 782 0 1 2831
+box -296 -2337 296 2337
+use sky130_fd_pr__pfet_01v8_lvt_6VY59T  XM_ppair_p
+timestamp 0
+transform 1 0 6850 0 1 1708
+box -683 -1373 683 1373
+use sky130_fd_pr__pfet_01v8_lvt_6VY59T  XM_ppair_p1
+timestamp 0
+transform 1 0 8163 0 1 1655
+box -683 -1373 683 1373
+use sky130_fd_pr__nfet_01v8_lvt_Q3FT3Q  XM_tail
+timestamp 0
+transform 1 0 2337 0 1 1160
+box -1312 -719 1312 719
+<< end >>

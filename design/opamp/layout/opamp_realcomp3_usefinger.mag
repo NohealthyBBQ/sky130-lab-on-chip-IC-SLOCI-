@@ -1,58 +1,33 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1661892224
-<< error_s >>
-rect 468 5151 503 5185
-rect 469 5132 503 5151
-rect 488 583 503 5132
-rect 522 5098 557 5132
-rect 522 583 556 5098
-rect 7462 3011 7497 3045
-rect 7463 2992 7497 3011
-rect 1008 1719 1042 1773
-rect 522 549 537 583
-rect 1027 530 1042 1719
-rect 1061 1685 1096 1719
-rect 1061 530 1095 1685
-rect 1061 496 1076 530
-rect 7482 371 7497 2992
-rect 7516 2958 7551 2992
-rect 7516 371 7550 2958
-rect 7516 337 7531 371
-rect 8795 318 8810 2992
-rect 8829 318 8863 3046
-rect 8829 284 8844 318
+timestamp 1662079606
 use sky130_fd_pr__cap_mim_m3_1_EN3Q86  XC1
 timestamp 1661639644
-transform 1 0 1697 0 1 2469
+transform 1 0 -5538 0 1 2000
 box -1750 -2240 1749 2240
 use XM_actload2  XM_actload2_0
 timestamp 1661870098
-transform 1 0 4343 0 1 6717
+transform 1 0 5911 0 1 -2151
 box -53 -53 2571 3173
-use sky130_fd_pr__pfet_01v8_lvt_ER3WTS  XM_cs
-timestamp 1661639644
-transform 1 0 10066 0 1 3202
-box -1273 -2973 1273 2973
+use XM_cs  XM_cs_0
+timestamp 1661891635
+transform 1 0 8792 0 1 -2181
+box -64 -53 2482 5609
 use sky130_fd_pr__nfet_01v8_lvt_BRDQL2  XM_diff_n
 timestamp 1661639644
-transform 1 0 243 0 1 2884
+transform 1 0 3416 0 1 13643
 box -296 -2337 296 2337
 use sky130_fd_pr__nfet_01v8_lvt_BRDQL2  XM_diff_n1
 timestamp 1661639644
-transform 1 0 782 0 1 2831
+transform 1 0 5202 0 1 11615
 box -296 -2337 296 2337
-use sky130_fd_pr__pfet_01v8_lvt_6VY59T  XM_ppair_p
-timestamp 1661639644
-transform 1 0 6850 0 1 1708
-box -683 -1373 683 1373
-use sky130_fd_pr__pfet_01v8_lvt_6VY59T  XM_ppair_p1
-timestamp 1661639644
-transform 1 0 8163 0 1 1655
-box -683 -1373 683 1373
+use XM_ppair  XM_ppair_0
+timestamp 1662067076
+transform 1 0 5958 0 1 8016
+box -220 -1160 4440 828
 use sky130_fd_pr__nfet_01v8_lvt_62X5LT  XM_tail
 timestamp 1661892224
-transform 1 0 2337 0 1 1098
+transform 1 0 3688 0 1 -89
 box -1312 -657 1312 657
 << end >>

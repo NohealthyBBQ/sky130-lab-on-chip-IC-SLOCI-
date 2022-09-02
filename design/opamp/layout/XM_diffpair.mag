@@ -1,0 +1,13 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1662080153
+use sky130_fd_pr__nfet_01v8_A5VCMN  sky130_fd_pr__nfet_01v8_A5VCMN_0
+timestamp 1662080153
+transform 1 0 585 0 1 -303
+box -545 -507 545 507
+use sky130_fd_pr__nfet_01v8_E96B6C  sky130_fd_pr__nfet_01v8_E96B6C_0
+timestamp 1662080153
+transform 1 0 585 0 1 857
+box -545 -507 545 507
+<< end >>
