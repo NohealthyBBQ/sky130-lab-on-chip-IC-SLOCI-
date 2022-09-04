@@ -1,10 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1662306807
-<< error_s >>
-rect -3137 2522 -3069 2568
-rect -3137 2040 -3069 2086
+timestamp 1662315881
 << metal2 >>
 rect -3780 2660 -3710 2670
 rect -3780 2590 -3710 2600
@@ -12,9 +9,12 @@ rect -2480 2660 -1640 2670
 rect -2480 2600 -1740 2660
 rect -1670 2600 -1640 2660
 rect -2480 2590 -1640 2600
+rect -4080 2330 -4000 2340
+rect -4080 2260 -4000 2270
 << via2 >>
 rect -3780 2600 -3710 2660
 rect -1740 2600 -1670 2660
+rect -4080 2270 -4000 2330
 << metal3 >>
 rect -3832 2665 -3702 4230
 rect -3832 2660 -3700 2665
@@ -26,16 +26,20 @@ rect -1772 2600 -1740 2660
 rect -1670 2600 -1642 2660
 rect -3832 2590 -3702 2595
 rect -1772 2560 -1642 2600
+rect -4090 2330 -3990 2335
+rect -4090 2270 -4080 2330
+rect -4000 2270 -3990 2330
+rect -4090 2265 -3990 2270
 use XM_actload2  XM_actload2_0
 timestamp 1661870098
-transform 1 0 2789 0 1 -857
+transform 1 0 -2047 0 1 753
 box -53 -53 2571 3173
 use XM_cs  XM_cs_0
 timestamp 1661891635
-transform 1 0 6296 0 1 3675
+transform 1 0 664 0 1 753
 box -64 -53 2482 5609
 use XM_diffpair  XM_diffpair_0
-timestamp 1662302892
+timestamp 1662313712
 transform 1 0 -3688 0 1 2162
 box -400 -1642 1600 1820
 use XM_ppair  XM_ppair_0
@@ -43,15 +47,15 @@ timestamp 1662231221
 transform 1 0 -5102 0 1 5030
 box -220 -1160 4440 828
 use XM_tail  XM_tail_0
-timestamp 1662306324
-transform 1 0 -5227 0 1 871
+timestamp 1662314158
+transform 1 0 -5225 0 1 839
 box -53 -51 1200 2931
 use sky130_fd_pr__cap_mim_m3_1_EN3Q86  sky130_fd_pr__cap_mim_m3_1_EN3Q86_0
 timestamp 1661639644
-transform 1 0 8170 0 1 724
+transform 1 0 4950 0 1 3040
 box -1750 -2240 1749 2240
 use sky130_fd_pr__res_high_po_2p85_7J2RPB  sky130_fd_pr__res_high_po_2p85_7J2RPB_0
 timestamp 1662230297
-transform 1 0 12090 0 1 4991
+transform 0 1 5108 -1 0 5851
 box -451 -1808 451 1808
 << end >>

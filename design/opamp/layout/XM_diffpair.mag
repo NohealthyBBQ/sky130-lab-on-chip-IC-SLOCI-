@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1662302892
+timestamp 1662313712
 << pwell >>
 rect -400 -1400 1600 1700
 << psubdiff >>
@@ -273,20 +273,18 @@ rect -98 -1060 40 -1000
 rect 100 -1060 1070 -1000
 rect -98 -1070 1130 -1060
 << via2 >>
-rect 800 840 860 900
-rect 800 -660 860 -600
+rect 290 830 360 910
+rect 290 -670 360 -590
 << metal3 >>
-rect 800 905 880 920
-rect 790 900 880 905
-rect 790 840 800 900
-rect 860 840 880 900
-rect 790 835 880 840
-rect 800 -595 880 835
-rect 790 -600 880 -595
-rect 790 -660 800 -600
-rect 860 -660 880 -600
-rect 790 -665 880 -660
-rect 800 -680 880 -665
+rect 280 910 380 920
+rect 280 830 290 910
+rect 360 830 380 910
+rect 280 180 380 830
+rect -360 100 380 180
+rect 280 -590 380 100
+rect 280 -670 290 -590
+rect 360 -670 380 -590
+rect 280 -680 380 -670
 use sky130_fd_pr__nfet_01v8_lvt_A5VCMN  sky130_fd_pr__nfet_01v8_lvt_A5VCMN_0
 timestamp 1662090071
 transform 1 0 585 0 1 -573
