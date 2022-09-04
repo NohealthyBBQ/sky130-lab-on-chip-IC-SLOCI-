@@ -1,7 +1,10 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1662233295
+timestamp 1662306807
+<< error_s >>
+rect -3137 2522 -3069 2568
+rect -3137 2040 -3069 2086
 << metal2 >>
 rect -3780 2660 -3710 2670
 rect -3780 2590 -3710 2600
@@ -32,7 +35,7 @@ timestamp 1661891635
 transform 1 0 6296 0 1 3675
 box -64 -53 2482 5609
 use XM_diffpair  XM_diffpair_0
-timestamp 1662136735
+timestamp 1662302892
 transform 1 0 -3688 0 1 2162
 box -400 -1642 1600 1820
 use XM_ppair  XM_ppair_0
@@ -40,9 +43,9 @@ timestamp 1662231221
 transform 1 0 -5102 0 1 5030
 box -220 -1160 4440 828
 use XM_tail  XM_tail_0
-timestamp 1661906530
-transform 1 0 615 0 1 4879
-box -53 -53 2571 1261
+timestamp 1662306324
+transform 1 0 -5227 0 1 871
+box -53 -51 1200 2931
 use sky130_fd_pr__cap_mim_m3_1_EN3Q86  sky130_fd_pr__cap_mim_m3_1_EN3Q86_0
 timestamp 1661639644
 transform 1 0 8170 0 1 724
