@@ -1,0 +1,33 @@
+** sch_path: /home/zexi/project/sloci/design/opamp/opamp_realcomp3_usefinger.sch
+**.subckt opamp_realcomp3_usefinger vdd vss in_n in_p out bias_0p7
+*.iopin vdd
+*.iopin vss
+*.ipin in_n
+*.ipin in_p
+*.opin out
+*.ipin bias_0p7
+XM_diff_n net2 in_n net1 vss sky130_fd_pr__nfet_01v8_lvt L=1 W=4.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+XM_diff_n1 net3 in_p net1 vss sky130_fd_pr__nfet_01v8_lvt L=1 W=4.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+XM_tail net1 bias_0p7 vss vss sky130_fd_pr__nfet_01v8_lvt L=2 W=10 nf=5 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XM_actload out bias_0p7 vss vss sky130_fd_pr__nfet_01v8_lvt L=2 W=15 nf=5 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+XM_ppair_p net3 net2 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=8 nf=4 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+XM_ppair_p1 net2 net2 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=1 W=8 nf=4 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+XM_cs out net3 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=0.5 W=84 nf=14 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+XR1 net4 out vss sky130_fd_pr__res_high_po W=3 L=13 mult=1 m=1
+XC1 net3 net4 sky130_fd_pr__cap_mim_m3_1 W=16 L=21.4 MF=1 m=1
+**.ends
+.end
