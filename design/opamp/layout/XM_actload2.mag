@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1662393099
+timestamp 1662393721
 << metal1 >>
 rect 522 2926 532 3026
 rect 612 2926 622 3026
@@ -242,7 +242,7 @@ rect 1060 920 1070 1020
 rect 990 260 1070 920
 rect 990 160 1000 260
 rect 1060 160 1070 260
-rect 990 155 1070 160
+rect 990 -50 1070 160
 use sky130_fd_pr__nfet_01v8_USQY94  sky130_fd_pr__nfet_01v8_USQY94_0
 timestamp 1661796674
 transform 1 0 1259 0 1 1560
