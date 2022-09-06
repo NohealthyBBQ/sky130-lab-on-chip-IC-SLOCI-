@@ -198,12 +198,6 @@ mult=1}
 C {gnd.sym} -840 70 0 0 {name=l5 lab=GND}
 C {lab_wire.sym} -890 -230 0 0 {name=l6 sig_type=std_logic lab=Vout_xhigh}
 C {isource.sym} -130 180 0 0 {name=I4 value=1u}
-C {sky130_fd_pr/res_high_po.sym} -130 510 0 0 {name=R5
-W=2
-L=223.5
-model=res_high_po
-spiceprefix=X
-mult=1}
 C {gnd.sym} -80 590 0 0 {name=l7 lab=GND}
 C {lab_wire.sym} -130 290 0 0 {name=l8 sig_type=std_logic lab=Vout_res_new}
 C {sky130_fd_pr/res_xhigh_po_5p73.sym} -310 510 0 0 {name=R6
@@ -243,3 +237,9 @@ C {gnd.sym} -370 630 0 0 {name=l12 lab=GND}
 C {gnd.sym} -370 690 0 0 {name=l13 lab=GND}
 C {gnd.sym} -370 750 0 0 {name=l14 lab=GND}
 C {gnd.sym} -310 780 0 0 {name=l15 lab=GND}
+C {sky130_fd_pr/res_high_po_1p41.sym} -130 510 0 0 {name=R5
+W=1.41
+L=153.8
+model=res_high_po_1p41
+spiceprefix=X
+mult=1}
