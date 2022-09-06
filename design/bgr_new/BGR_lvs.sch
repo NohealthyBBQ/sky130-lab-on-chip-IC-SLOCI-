@@ -511,7 +511,7 @@ spiceprefix=X
 C {devices/lab_pin.sym} -510 -140 0 0 {name=l4 lab=vbneg}
 C {devices/lab_pin.sym} -970 -220 2 0 {name=l10 lab=Veb}
 C {devices/lab_wire.sym} -820 -580 0 0 {name=l11 lab=vgate}
-C {sky130_fd_pr/nfet_01v8_lvt.sym} -1290 -40 0 0 {name=M7
+C {sky130_fd_pr/nfet_01v8_lvt.sym} -1290 -40 0 0 {name=Mota_bias_n
 L=4
 W=5
 nf=1
@@ -525,7 +525,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8_lvt.sym} -1290 -570 0 0 {name=M13
+C {sky130_fd_pr/pfet_01v8_lvt.sym} -1290 -570 0 0 {name=Mota_bias_p
 L=1
 W=1
 nf=1
@@ -539,7 +539,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8_lvt.sym} -990 -570 0 0 {name=M1
+C {sky130_fd_pr/pfet_01v8_lvt.sym} -990 -570 0 0 {name=Mfeedback_mir
 L=1
 W=1
 nf=1
@@ -553,7 +553,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8_lvt.sym} -530 -570 0 0 {name=M2
+C {sky130_fd_pr/pfet_01v8_lvt.sym} -530 -570 0 0 {name=Mfeedback_mir1
 L=1
 W=1
 nf=1
@@ -567,7 +567,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8_lvt.sym} -20 -570 0 0 {name=M3
+C {sky130_fd_pr/pfet_01v8_lvt.sym} -20 -570 0 0 {name=Mfeedback_mir2
 L=1
 W=1
 nf=1
@@ -606,7 +606,7 @@ spiceprefix=X
 C {devices/lab_pin.sym} -1310 -70 2 1 {name=l2 lab=Vota_bias1}
 C {devices/lab_pin.sym} -640 -430 2 0 {name=l18 lab=Vota_bias1}
 C {devices/ammeter.sym} -1270 -440 0 0 {name=Vmbias1 current=1.0057e-05}
-C {sky130_fd_pr/nfet_01v8_lvt.sym} -240 -420 0 0 {name=M10
+C {sky130_fd_pr/nfet_01v8_lvt.sym} -240 -420 0 0 {name=Mpdn
 L=0.15
 W=1
 nf=1
@@ -685,7 +685,7 @@ spiceprefix=X
 C {lab_wire.sym} 330 -400 0 0 {name=l7 sig_type=std_logic lab=Vbg}
 C {devices/lab_pin.sym} 600 -470 0 0 {name=l21 lab=vcurrent_gate}
 C {devices/lab_pin.sym} 660 -270 0 1 {name=l29 lab=vfeedback}
-C {sky130_fd_pr/nfet_01v8.sym} -190 -830 0 0 {name=M6
+C {sky130_fd_pr/nfet_01v8.sym} -190 -830 0 0 {name=Minv_n
 L=0.15
 W=1
 nf=1 
@@ -699,7 +699,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} -190 -930 0 0 {name=M9
+C {sky130_fd_pr/pfet_01v8.sym} -190 -930 0 0 {name=Minv_p
 L=0.15
 W=2
 nf=1
@@ -713,7 +713,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} -50 -830 0 0 {name=M12
+C {sky130_fd_pr/nfet_01v8.sym} -50 -830 0 0 {name=Minv_n1
 L=0.15
 W=1
 nf=1 
@@ -727,7 +727,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} -50 -930 0 0 {name=M14
+C {sky130_fd_pr/pfet_01v8.sym} -50 -930 0 0 {name=Minv_p1
 L=0.15
 W=2
 nf=1
@@ -804,7 +804,7 @@ spiceprefix=X
 C {opin.sym} 1060 -200 0 0 {name=p1 lab=Iout0}
 C {devices/lab_pin.sym} 1170 -40 0 0 {name=l36 lab=voutb1}
 C {devices/lab_pin.sym} 1170 -130 0 0 {name=l37 lab=voutb2}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 160 -810 0 0 {name=C1 model=cap_mim_m3_1 W=16 L=20 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 160 -810 0 0 {name=C_porst model=cap_mim_m3_1 W=16 L=20 MF=1 spiceprefix=X}
 C {iopin.sym} -1270 -670 0 1 {name=p2 lab=VDD}
 C {iopin.sym} -1310 -10 0 1 {name=p3 lab=VSS}
 C {devices/lab_pin.sym} -80 -780 3 0 {name=l1 lab=VSS}
@@ -972,43 +972,43 @@ spiceprefix=X
 C {devices/lab_pin.sym} 2080 -40 0 0 {name=l32 lab=voutb1}
 C {devices/lab_pin.sym} 2080 -130 0 0 {name=l33 lab=voutb2}
 C {opin.sym} 2140 -200 0 0 {name=p11 lab=Iout6}
-C {sky130_fd_pr/res_xhigh_po_5p73.sym} 200 -160 3 0 {name=R6
+C {sky130_fd_pr/res_xhigh_po_5p73.sym} 200 -160 3 0 {name=Rref_xhigh
 W=5.73
 L=104
 model=res_xhigh_po_5p73
 spiceprefix=X
 mult=1}
-C {sky130_fd_pr/res_xhigh_po_5p73.sym} 260 -160 3 0 {name=R2
+C {sky130_fd_pr/res_xhigh_po_5p73.sym} 260 -160 3 0 {name=Rref_xhigh1
 W=5.73
 L=104
 model=res_xhigh_po_5p73
 spiceprefix=X
 mult=1}
-C {sky130_fd_pr/res_xhigh_po_5p73.sym} 320 -160 3 0 {name=R4
+C {sky130_fd_pr/res_xhigh_po_5p73.sym} 320 -160 3 0 {name=Rref_xhigh2
 W=5.73
 L=104
 model=res_xhigh_po_5p73
 spiceprefix=X
 mult=1}
-C {sky130_fd_pr/res_xhigh_po_5p73.sym} 380 -160 3 0 {name=R7
+C {sky130_fd_pr/res_xhigh_po_5p73.sym} 380 -160 3 0 {name=Rref_xhigh3
 W=5.73
 L=104
 model=res_xhigh_po_5p73
 spiceprefix=X
 mult=1}
-C {sky130_fd_pr/res_xhigh_po_5p73.sym} 440 -160 3 0 {name=R8
+C {sky130_fd_pr/res_xhigh_po_5p73.sym} 440 -160 3 0 {name=Rref_xhigh4
 W=5.73
 L=104
 model=res_xhigh_po_5p73
 spiceprefix=X
 mult=1}
-C {sky130_fd_pr/res_high_po_1p41.sym} 660 -100 0 0 {name=R1
+C {sky130_fd_pr/res_high_po_1p41.sym} 660 -100 0 0 {name=Rref_high
 W=1.41
 L=153.5
 model=res_high_po_1p41
 spiceprefix=X
 mult=1}
-C {sky130_fd_pr/res_high_po_1p41.sym} 0 -300 0 0 {name=R10
+C {sky130_fd_pr/res_high_po_1p41.sym} 0 -300 0 0 {name=R4
 W=1.41
 L=42.39
 model=res_high_po_1p41
@@ -1020,7 +1020,7 @@ L=8.1
 model=res_high_po_1p41
 spiceprefix=X
 mult=1}
-C {sky130_fd_pr/res_high_po_1p41.sym} 110 -880 3 0 {name=R5
+C {sky130_fd_pr/res_high_po_1p41.sym} 110 -880 3 0 {name=R_porst
 W=1.41
 L=16
 model=res_high_po_1p41
