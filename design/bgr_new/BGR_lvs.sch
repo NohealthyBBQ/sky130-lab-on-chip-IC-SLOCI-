@@ -607,12 +607,6 @@ spiceprefix=X
 C {devices/lab_pin.sym} -1310 -70 2 1 {name=l2 lab=Vota_bias1}
 C {devices/lab_pin.sym} -640 -430 2 0 {name=l18 lab=Vota_bias1}
 C {devices/ammeter.sym} -1270 -440 0 0 {name=Vmbias1 current=1.0057e-05}
-C {sky130_fd_pr/res_high_po.sym} -510 -200 0 0 {name=R3
-W=4
-L=25
-model=res_high_po
-spiceprefix=X
-mult=1}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} -240 -420 0 0 {name=M10
 L=0.15
 W=1
@@ -1024,6 +1018,12 @@ mult=1}
 C {sky130_fd_pr/res_high_po_1p41.sym} 0 -300 0 0 {name=R10
 W=1.41
 L=42.39
+model=res_high_po_1p41
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po_1p41.sym} -510 -200 0 0 {name=R3
+W=1.41
+L=8.1
 model=res_high_po_1p41
 spiceprefix=X
 mult=1}
