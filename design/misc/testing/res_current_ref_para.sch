@@ -98,11 +98,49 @@ N -940 70 -930 70 {
 lab=GND}
 N -1240 -440 -1240 40 {
 lab=GND}
+N -130 440 -130 480 {
+lab=Vout_res_new}
+N -130 540 -130 590 {
+lab=GND}
+N -130 590 40 590 {
+lab=GND}
+N 40 340 40 590 {
+lab=GND}
+N -130 110 40 110 {
+lab=GND}
+N -130 110 -130 150 {
+lab=GND}
+N -180 510 -150 510 {
+lab=GND}
+N -130 390 -130 440 {
+lab=Vout_res_new}
+N -130 210 -130 330 {
+lab=Vout_res_new}
+N 40 110 40 350 {
+lab=GND}
+N -310 390 -130 390 {
+lab=Vout_res_new}
+N -310 390 -310 480 {
+lab=Vout_res_new}
+N -370 510 -330 510 {
+lab=GND}
+N -130 330 -130 390 {
+lab=Vout_res_new}
+N -170 590 -130 590 {
+lab=GND}
+N -370 570 -330 570 {
+lab=GND}
+N -370 630 -330 630 {
+lab=GND}
+N -370 690 -330 690 {
+lab=GND}
+N -370 750 -330 750 {
+lab=GND}
 C {isource.sym} -130 -370 0 0 {name=I1 value=1u}
 C {sky130_fd_pr/corner.sym} 400 -310 0 0 {name=CORNER only_toplevel=true corner=tt}
 C {sky130_fd_pr/res_high_po.sym} -130 -40 0 0 {name=R2
 W=2
-L=235
+L=223.5
 model=res_high_po
 spiceprefix=X
 mult=1}
@@ -115,8 +153,8 @@ C {devices/code.sym} 400 -160 0 0 {name=sIM only_toplevel=false value="
 .save all
 .control
 run
-plot Vout_res
-plot deriv(Vout_res)
+plot Vout_res Vout_res_new
+plot deriv(Vout_res) deriv(Vout_res_new)
 plot Vout_high
 plot deriv(Vout_high)
 plot Vout_xhigh
@@ -137,14 +175,14 @@ C {gnd.sym} -80 40 0 0 {name=l1 lab=GND}
 C {lab_wire.sym} -130 -260 0 0 {name=l2 sig_type=std_logic lab=Vout_res}
 C {sky130_fd_pr/res_high_po.sym} -310 -40 0 0 {name=R1
 W=5
-L=450
+L=475
 model=res_xhigh_po
 spiceprefix=X
 mult=1}
 C {isource.sym} -1410 -370 0 0 {name=I2 value=1u}
 C {sky130_fd_pr/res_high_po.sym} -1410 -40 0 0 {name=R3
 W=2
-L=255
+L=223.5
 model=res_high_po
 spiceprefix=X
 mult=1}
@@ -152,10 +190,56 @@ C {gnd.sym} -1360 40 0 0 {name=l3 lab=GND}
 C {lab_wire.sym} -1410 -260 0 0 {name=l4 sig_type=std_logic lab=Vout_high}
 C {isource.sym} -890 -340 0 0 {name=I3 value=1u}
 C {sky130_fd_pr/res_high_po.sym} -890 -10 0 0 {name=R4
-W=10
-L=570
+W=5
+L=475
 model=res_xhigh_po
 spiceprefix=X
 mult=1}
 C {gnd.sym} -840 70 0 0 {name=l5 lab=GND}
 C {lab_wire.sym} -890 -230 0 0 {name=l6 sig_type=std_logic lab=Vout_xhigh}
+C {isource.sym} -130 180 0 0 {name=I4 value=1u}
+C {sky130_fd_pr/res_high_po.sym} -130 510 0 0 {name=R5
+W=2
+L=223.5
+model=res_high_po
+spiceprefix=X
+mult=1}
+C {gnd.sym} -80 590 0 0 {name=l7 lab=GND}
+C {lab_wire.sym} -130 290 0 0 {name=l8 sig_type=std_logic lab=Vout_res_new}
+C {sky130_fd_pr/res_xhigh_po_5p73.sym} -310 510 0 0 {name=R6
+W=5.73
+L=110
+model=res_xhigh_po_5p73
+spiceprefix=X
+mult=1}
+C {gnd.sym} -370 510 0 0 {name=l9 lab=GND}
+C {gnd.sym} -180 510 0 0 {name=l10 lab=GND}
+C {sky130_fd_pr/res_xhigh_po_5p73.sym} -310 570 0 0 {name=R7
+W=5.73
+L=110
+model=res_xhigh_po_5p73
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_xhigh_po_5p73.sym} -310 630 0 0 {name=R8
+W=5.73
+L=110
+model=res_xhigh_po_5p73
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_xhigh_po_5p73.sym} -310 690 0 0 {name=R9
+W=5.73
+L=110
+model=res_xhigh_po_5p73
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_xhigh_po_5p73.sym} -310 750 0 0 {name=R10
+W=5.73
+L=110
+model=res_xhigh_po_5p73
+spiceprefix=X
+mult=1}
+C {gnd.sym} -370 570 0 0 {name=l11 lab=GND}
+C {gnd.sym} -370 630 0 0 {name=l12 lab=GND}
+C {gnd.sym} -370 690 0 0 {name=l13 lab=GND}
+C {gnd.sym} -370 750 0 0 {name=l14 lab=GND}
+C {gnd.sym} -310 780 0 0 {name=l15 lab=GND}
