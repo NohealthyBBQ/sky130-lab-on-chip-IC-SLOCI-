@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1662399722
+timestamp 1662592606
 << locali >>
 rect -5320 3700 -2040 3760
 rect -5320 3600 -5220 3700
@@ -60,6 +60,7 @@ rect -5306 1380 -5234 1392
 rect -5310 980 -5300 1380
 rect -5240 980 -5230 1380
 rect -5306 968 -5234 980
+rect -4685 770 -4625 966
 rect -4100 880 -3980 1720
 rect 6290 1100 6300 1400
 rect 6500 1100 6510 1400
@@ -74,6 +75,8 @@ rect 4808 860 5152 866
 rect 4808 780 4820 860
 rect 5140 780 5152 860
 rect 4808 774 5152 780
+rect -4685 710 -750 770
+rect -4685 701 -4625 710
 << via1 >>
 rect -5160 5620 -4760 5680
 rect -3720 5620 -3320 5680
@@ -127,8 +130,10 @@ rect -1670 2600 520 2660
 rect 580 2600 590 2660
 rect -2480 2590 590 2600
 rect -5300 2500 -5240 2510
+rect -2752 2352 -2652 2432
 rect -4080 2330 -4000 2340
 rect -4080 2260 -4000 2270
+rect -2752 2172 -2652 2252
 rect 301 2157 647 2289
 rect -5300 2090 -5240 2100
 rect -4060 2120 -4000 2130
@@ -337,21 +342,21 @@ rect -2760 740 4820 840
 rect 5140 740 6740 860
 rect -5380 660 6740 740
 use XM_actload2  XM_actload2_0
-timestamp 1662393721
+timestamp 1662591347
 transform 1 0 -2047 0 1 753
 box -53 -53 2571 3173
 use XM_cs  XM_cs_0
-timestamp 1662393407
+timestamp 1662401230
 transform 1 0 664 0 1 753
 box -140 -53 2482 5650
 use XM_diffpair  XM_diffpair_0
-timestamp 1662313712
+timestamp 1662590620
 transform 1 0 -3688 0 1 2162
-box -400 -1642 1600 1820
+box -400 -1400 1600 1700
 use XM_ppair  XM_ppair_0
-timestamp 1662231221
+timestamp 1662590578
 transform 1 0 -5102 0 1 5030
-box -220 -1160 4440 828
+box -220 -1060 4440 720
 use XM_tail  XM_tail_0
 timestamp 1662390953
 transform 1 0 -5225 0 1 839
@@ -364,4 +369,11 @@ use sky130_fd_pr__res_high_po_2p85_7J2RPB  sky130_fd_pr__res_high_po_2p85_7J2RPB
 timestamp 1662230297
 transform 0 1 4968 -1 0 1241
 box -451 -1808 451 1808
+<< labels >>
+rlabel metal4 -820 5600 1820 5800 1 vdd
+rlabel metal4 -5380 660 -3460 860 5 vss
+rlabel metal1 -4685 710 -750 770 5 bias_0p7
+rlabel metal2 3009 907 3356 1047 5 out
+rlabel space -2958 2352 -2652 2432 3 in_p
+rlabel space -3188 2172 -2652 2252 3 in_n
 << end >>
