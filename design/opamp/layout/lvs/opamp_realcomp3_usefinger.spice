@@ -1,5 +1,9 @@
 * NGSPICE file created from opamp_realcomp3_usefinger.ext - technology: sky130A
 
+.subckt sky130_fd_pr__cap_mim_m3_1_EN3Q86 c1_n1650_n2140# m3_n1750_n2240#
+X0 c1_n1650_n2140# m3_n1750_n2240# sky130_fd_pr__cap_mim_m3_1 l=2.14e+07u w=1.6e+07u
+.ends
+
 .subckt sky130_fd_pr__pfet_01v8_lvt_D74VRS a_n345_118# a_n661_n1247# a_445_118# a_977_n1344#
 + a_n761_1386# a_n819_1483# a_n345_n2612# a_n819_n2612# a_977_21# a_n977_n1247# a_n345_1483#
 + a_187_21# a_n187_118# a_287_118# a_n187_n2612# a_n1135_1483# a_n977_1483# a_n661_n2612#
@@ -112,15 +116,14 @@ X2 a_n29_n481# a_n229_n507# a_n287_n481# VSUBS sky130_fd_pr__nfet_01v8_lvt ad=0p
 X3 a_n287_n481# a_n487_n507# a_n545_n481# VSUBS sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=1.305e+12p ps=9.58e+06u w=4.5e+06u l=1e+06u
 .ends
 
-.subckt XM_diffpair B m1_30_1280# m1_30_n1060# m1_280_n670#
+.subckt XM_diffpair sky130_fd_pr__nfet_01v8_lvt_E96B6C_0/VSUBS m1_30_1280# m1_30_n1060#
++ m1_280_n670#
 Xsky130_fd_pr__nfet_01v8_lvt_E96B6C_0 m1_551_360# m1_280_n670# m1_551_360# m1_160_200#
-+ m1_280_n670# m1_30_1280# m1_160_200# m1_30_n1060# m1_30_1280# B sky130_fd_pr__nfet_01v8_lvt_E96B6C
++ m1_280_n670# m1_30_1280# m1_160_200# m1_30_n1060# m1_30_1280# sky130_fd_pr__nfet_01v8_lvt_E96B6C_0/VSUBS
++ sky130_fd_pr__nfet_01v8_lvt_E96B6C
 Xsky130_fd_pr__nfet_01v8_lvt_A5VCMN_0 m1_280_n670# m1_160_200# m1_30_n1060# m1_160_200#
-+ m1_551_360# m1_30_1280# m1_30_n1060# m1_551_360# m1_280_n670# B sky130_fd_pr__nfet_01v8_lvt_A5VCMN
-.ends
-
-.subckt sky130_fd_pr__cap_mim_m3_1_EN3Q86 c1_n1650_n2140# m3_n1750_n2240#
-X0 c1_n1650_n2140# m3_n1750_n2240# sky130_fd_pr__cap_mim_m3_1 l=2.14e+07u w=1.6e+07u
++ m1_551_360# m1_30_1280# m1_30_n1060# m1_551_360# m1_280_n670# sky130_fd_pr__nfet_01v8_lvt_E96B6C_0/VSUBS
++ sky130_fd_pr__nfet_01v8_lvt_A5VCMN
 .ends
 
 .subckt sky130_fd_pr__res_high_po_2p85_7J2RPB a_n285_n1642# a_n415_n1772# a_n285_1210#
@@ -156,8 +159,7 @@ X18 a_200_n1403# a_n200_n1491# a_n258_n1403# a_n1276_n1577# sky130_fd_pr__nfet_0
 X19 a_n716_109# a_n1116_21# a_n1174_109# a_n1276_n1577# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=8.7e+11p ps=6.58e+06u w=3e+06u l=2e+06u
 .ends
 
-.subckt XM_actload2 m1_985_79# m1_522_658# m1_522_1414# m1_522_2926# m1_520_2170#
-+ VSUBS
+.subckt XM_actload2 m1_522_658# m1_522_1414# m1_522_2926# m1_520_2170# VSUBS
 Xsky130_fd_pr__nfet_01v8_USQY94_0 m1_62_1668# m1_62_1668# m1_522_658# m1_520_2170#
 + m1_985_79# m1_522_2926# m1_62_1668# m1_985_79# m1_985_79# m1_62_1668# m1_985_79#
 + m1_985_79# m1_985_79# m1_62_1668# m1_520_2170# m1_522_1414# m1_985_79# m1_985_79#
@@ -184,7 +186,7 @@ X8 a_n29_943# a_n429_855# a_n487_943# a_n589_n1455# sky130_fd_pr__nfet_01v8_lvt 
 X9 a_n29_387# a_n429_299# a_n487_387# a_n589_n1455# sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=5.8e+11p ps=4.58e+06u w=2e+06u l=2e+06u
 .ends
 
-.subckt XM_tail m1_780_80# m1_530_330# VSUBS
+.subckt XM_tail m1_530_330# VSUBS
 Xsky130_fd_pr__nfet_01v8_lvt_7MFZYU_0 m1_780_80# m1_780_80# VSUBS VSUBS VSUBS m1_530_330#
 + VSUBS m1_780_80# VSUBS VSUBS m1_780_80# m1_530_330# VSUBS m1_780_80# m1_530_330#
 + m1_530_330# VSUBS m1_780_80# m1_780_80# m1_780_80# m1_780_80# VSUBS VSUBS m1_780_80#
@@ -255,12 +257,12 @@ Xsky130_fd_pr__pfet_01v8_lvt_B64SAM_0 m1_70_n360# m1_70_n360# m1_70_n360# m1_70_
 .ends
 
 .subckt opamp_realcomp3_usefinger
-XXM_cs_0 VDD out m1_510_2600# XM_cs
-XXM_diffpair_0 VSS m1_510_2600# VDD m2_n4080_2260# XM_diffpair
 Xsky130_fd_pr__cap_mim_m3_1_EN3Q86_0 m1_510_2600# m1_6290_1100# sky130_fd_pr__cap_mim_m3_1_EN3Q86
-Xsky130_fd_pr__res_high_po_2p85_7J2RPB_0 out VSS m1_6290_1100# sky130_fd_pr__res_high_po_2p85_7J2RPB
-XXM_actload2_0 m1_n4685_710# out out out out VSS XM_actload2
-XXM_tail_0 m1_n4685_710# m2_n4080_2260# VSS XM_tail
-XXM_ppair_0 VDD m1_510_2600# VDD XM_ppair
+XXM_cs_0 m1_n5170_4040# m2_305_1401# m1_510_2600# XM_cs
+XXM_diffpair_0 VSUBS m1_510_2600# m1_n5170_4040# m2_n4080_2260# XM_diffpair
+Xsky130_fd_pr__res_high_po_2p85_7J2RPB_0 m2_305_1401# VSUBS m1_6290_1100# sky130_fd_pr__res_high_po_2p85_7J2RPB
+XXM_actload2_0 m2_305_1401# m2_305_1401# m2_305_1401# m2_305_1401# VSUBS XM_actload2
+XXM_tail_0 m2_n4080_2260# VSUBS XM_tail
+XXM_ppair_0 m1_n5170_4040# m1_510_2600# m1_n5170_4040# XM_ppair
 .ends
 

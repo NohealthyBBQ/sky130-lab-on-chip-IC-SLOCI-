@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1662313712
+timestamp 1662590620
 << pwell >>
 rect -400 -1400 1600 1700
 << psubdiff >>
@@ -293,15 +293,4 @@ use sky130_fd_pr__nfet_01v8_lvt_E96B6C  sky130_fd_pr__nfet_01v8_lvt_E96B6C_0
 timestamp 1662090071
 transform 1 0 585 0 1 857
 box -545 -507 545 507
-<< labels >>
-flabel space 116 1692 300 1816 0 FreeSans 1280 0 0 0 A
-flabel space 360 1688 544 1812 0 FreeSans 1280 0 0 0 B
-flabel space 624 1696 808 1820 0 FreeSans 1280 0 0 0 B
-flabel space 886 1686 1070 1810 0 FreeSans 1280 0 0 0 A
-flabel space 98 -1638 282 -1514 0 FreeSans 1280 0 0 0 B
-flabel space 388 -1626 572 -1502 0 FreeSans 1280 0 0 0 A
-flabel space 654 -1638 838 -1514 0 FreeSans 1280 0 0 0 A
-flabel space 890 -1642 1074 -1518 0 FreeSans 1280 0 0 0 B
-flabel pwell 1320 200 1400 260 0 FreeSans 480 0 0 0 A
-flabel pwell 1320 20 1400 80 0 FreeSans 480 0 0 0 B
 << end >>

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1662231221
+timestamp 1662590578
 << nwell >>
 rect -220 -1060 4440 720
 << nsubdiff >>
@@ -350,21 +350,4 @@ use sky130_fd_pr__pfet_01v8_lvt_MBDTEX  sky130_fd_pr__pfet_01v8_lvt_MBDTEX_0
 timestamp 1661909182
 transform 1 0 2109 0 1 -562
 box -2129 -298 2129 264
-<< labels >>
-flabel nwell 3820 648 3980 828 0 FreeSans 1600 0 0 0 A
-flabel nwell 3320 648 3480 828 0 FreeSans 1600 0 0 0 B
-flabel nwell 2800 648 2960 828 0 FreeSans 1600 0 0 0 B
-flabel nwell 2280 648 2440 828 0 FreeSans 1600 0 0 0 A
-flabel nwell 1760 648 1920 828 0 FreeSans 1600 0 0 0 A
-flabel nwell 1260 648 1420 828 0 FreeSans 1600 0 0 0 B
-flabel nwell 740 648 900 828 0 FreeSans 1600 0 0 0 B
-flabel nwell 240 648 400 828 0 FreeSans 1600 0 0 0 A
-flabel space 3820 -1160 3980 -980 0 FreeSans 1600 0 0 0 B
-flabel space 3300 -1160 3460 -980 0 FreeSans 1600 0 0 0 A
-flabel space 2780 -1160 2940 -980 0 FreeSans 1600 0 0 0 A
-flabel space 2280 -1160 2440 -980 0 FreeSans 1600 0 0 0 B
-flabel space 1760 -1160 1920 -980 0 FreeSans 1600 0 0 0 B
-flabel space 1240 -1160 1400 -980 0 FreeSans 1600 0 0 0 A
-flabel space 720 -1160 880 -980 0 FreeSans 1600 0 0 0 A
-flabel space 220 -1160 380 -980 0 FreeSans 1600 0 0 0 B
 << end >>
