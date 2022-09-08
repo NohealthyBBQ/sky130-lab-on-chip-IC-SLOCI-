@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1662590578
+timestamp 1662597113
 << nwell >>
 rect -220 -1060 4440 720
 << nsubdiff >>
@@ -340,7 +340,7 @@ rect 2820 -800 2830 -710
 rect 2942 -800 2952 -710
 rect 2820 -805 2952 -800
 rect 2820 -810 2950 -805
-rect 1270 -1000 1400 -810
+rect 1270 -840 1400 -810
 rect 3330 -1000 3460 -485
 use sky130_fd_pr__pfet_01v8_lvt_B64SAM *sky130_fd_pr__pfet_01v8_lvt_B64SAM_0
 timestamp 1661909013
