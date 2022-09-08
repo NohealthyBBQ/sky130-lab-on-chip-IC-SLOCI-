@@ -7,12 +7,12 @@ E {}
 T {10u} 540 -440 0 0 0.4 0.4 {}
 T {10u} 330 -440 0 0 0.4 0.4 {}
 T {100u} 740 -440 0 0 0.4 0.4 {}
-N 360 -170 360 -140 { lab=#net1}
-N 450 -140 540 -140 { lab=#net1}
-N 540 -170 540 -140 { lab=#net1}
+N 360 -170 360 -140 { lab=ppair_gate}
+N 450 -140 540 -140 { lab=ppair_gate}
+N 540 -170 540 -140 { lab=ppair_gate}
 N 450 -60 470 -60 { lab=vss}
 N 470 -60 470 0 { lab=vss}
-N 450 -140 450 -90 { lab=#net1}
+N 450 -140 450 -90 { lab=ppair_gate}
 N 470 -200 540 -200 { lab=vss}
 N 470 -200 470 -60 { lab=vss}
 N 680 -60 720 -60 { lab=bias_0p7}
@@ -21,9 +21,9 @@ N 380 -110 680 -110 { lab=bias_0p7}
 N 380 -60 410 -60 { lab=bias_0p7}
 N 380 -110 380 -60 { lab=bias_0p7}
 N 450 -30 450 -0 { lab=vss}
-N 360 -310 360 -230 { lab=#net2}
-N 400 -340 500 -340 { lab=#net2}
-N 540 -280 540 -230 { lab=#net3}
+N 360 -310 360 -230 { lab=ppair_gate}
+N 400 -340 500 -340 { lab=ppair_gate}
+N 540 -280 540 -230 { lab=first_stage_out}
 N 540 -340 560 -340 { lab=vdd}
 N 560 -400 560 -340 { lab=vdd}
 N 540 -400 560 -400 { lab=vdd}
@@ -41,31 +41,31 @@ N 760 -60 780 -60 { lab=vss}
 N 780 -60 780 0 { lab=vss}
 N 760 -30 760 0 { lab=vss}
 N 450 -0 470 0 { lab=vss}
-N 360 -140 450 -140 { lab=#net1}
+N 360 -140 450 -140 { lab=ppair_gate}
 N 360 -200 470 -200 { lab=vss}
 N 340 -400 360 -400 { lab=vdd}
 N 360 -400 540 -400 { lab=vdd}
 N 760 0 780 0 { lab=vss}
 N 470 0 760 0 { lab=vss}
-N 540 -310 540 -280 { lab=#net3}
+N 540 -310 540 -280 { lab=first_stage_out}
 N 300 -200 320 -200 { lab=in_n}
-N 450 -340 450 -280 { lab=#net2}
-N 360 -280 450 -280 { lab=#net2}
+N 450 -340 450 -280 { lab=ppair_gate}
+N 360 -280 450 -280 { lab=ppair_gate}
 N 580 -200 600 -200 { lab=in_p}
 N 300 -110 380 -110 {
 lab=bias_0p7}
 N 670 -280 720 -280 {
-lab=#net3}
+lab=first_stage_out}
 N 540 -280 670 -280 {
-lab=#net3}
+lab=first_stage_out}
 N 760 -200 810 -200 {
 lab=out}
 N 690 -280 690 -250 {
-lab=#net3}
+lab=first_stage_out}
 N 690 -190 690 -170 {
-lab=#net4}
+lab=#net1}
 N 690 -170 690 -150 {
-lab=#net4}
+lab=#net1}
 N 750 -150 760 -150 {
 lab=out}
 N 720 -170 780 -170 {
@@ -183,3 +183,6 @@ L=12.1
 model=res_high_po_2p85
 spiceprefix=X
 mult=1}
+C {lab_wire.sym} 630 -280 1 0 {name=l1 sig_type=std_logic lab=first_stage_out}
+C {lab_wire.sym} 410 -280 2 0 {name=l2 sig_type=std_logic lab=ppair_gate}
+C {lab_wire.sym} 540 -140 2 0 {name=l3 sig_type=std_logic lab=diffpair_source}
