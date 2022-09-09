@@ -1,0 +1,31 @@
+** sch_path: /foss/designs/sumprj/hiarachy_final/core_osc.sch
+.subckt core_osc VDD BIAS SUB GND S1A S1B S2A S2B S3A S3B S4A S4B
+*.PININFO VDD:I BIAS:I SUB:I GND:I S1A:O S1B:O S2A:O S2B:O S3A:O S3B:O S4A:O S4B:O
+X1 S4B S4A BIAS VDD GND SUB S1A S1B core_osc_amp
+X2 S1A S1B BIAS VDD GND SUB S2A S2B core_osc_amp
+X3 S2A S2B BIAS VDD GND SUB S3A S3B core_osc_amp
+X4 S3A S3B BIAS VDD GND SUB S4A S4B core_osc_amp
+.ends
+
+* expanding   symbol:  hiarachy_final/core_osc_amp.sym # of pins=8
+** sym_path: /foss/designs/sumprj/hiarachy_final/core_osc_amp.sym
+** sch_path: /foss/designs/sumprj/hiarachy_final/core_osc_amp.sch
+.subckt core_osc_amp  INA INB BIAS VDD GND SUB OUTA OUTB
+*.PININFO INA:I INB:I BIAS:I GND:I VDD:I SUB:I OUTA:O OUTB:O
+XM2 OUTA INA net1 SUB sky130_fd_pr__nfet_01v8_lvt L=0.15 W=4 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 OUTB INB net1 SUB sky130_fd_pr__nfet_01v8_lvt L=0.15 W=4 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM1 net1 BIAS GND SUB sky130_fd_pr__nfet_01v8_lvt L=0.15 W=20 nf=20 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XR16 OUTA VDD SUB sky130_fd_pr__res_high_po_2p85 L=7.6 mult=1 m=1
+XR17 OUTB VDD SUB sky130_fd_pr__res_high_po_2p85 L=7.6 mult=1 m=1
+XM4 net1 BIAS GND SUB sky130_fd_pr__nfet_01v8_lvt L=0.15 W=20 nf=20 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.end
