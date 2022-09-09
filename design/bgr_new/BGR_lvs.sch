@@ -607,8 +607,8 @@ C {devices/lab_pin.sym} -1310 -70 2 1 {name=l2 lab=Vota_bias1}
 C {devices/lab_pin.sym} -640 -430 2 0 {name=l18 lab=Vota_bias1}
 C {devices/ammeter.sym} -1270 -440 0 0 {name=Vmbias1 current=1.0057e-05}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} -240 -420 0 0 {name=Mpdn
-L=0.15
-W=1
+L=0.5
+W=1.5
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -686,8 +686,8 @@ C {lab_wire.sym} 330 -400 0 0 {name=l7 sig_type=std_logic lab=Vbg}
 C {devices/lab_pin.sym} 600 -470 0 0 {name=l21 lab=vcurrent_gate}
 C {devices/lab_pin.sym} 660 -270 0 1 {name=l29 lab=vfeedback}
 C {sky130_fd_pr/nfet_01v8.sym} -190 -830 0 0 {name=Minv_n
-L=0.15
-W=1
+L=0.5
+W=1.5
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -700,8 +700,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} -190 -930 0 0 {name=Minv_p
-L=0.15
-W=2
+L=0.5
+W=4
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -714,8 +714,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} -50 -830 0 0 {name=Minv_n1
-L=0.15
-W=1
+L=0.5
+W=1.5
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -728,8 +728,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} -50 -930 0 0 {name=Minv_p1
-L=0.15
-W=2
+L=0.5
+W=4
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
