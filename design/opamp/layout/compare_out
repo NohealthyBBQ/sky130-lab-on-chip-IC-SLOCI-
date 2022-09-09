@@ -62,11 +62,7 @@ Flattening unmatched subcell XM_ppair in circuit opamp_realcomp3_usefinger (0)(1
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_MBDTEX in circuit opamp_realcomp3_usefinger (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_B64SAM in circuit opamp_realcomp3_usefinger (0)(1 instance)
 
-Cell opamp_realcomp3_usefinger (0) disconnected node: in_n
-Cell opamp_realcomp3_usefinger (0) disconnected node: in_p
 Class opamp_realcomp3_usefinger (0):  Merged 119 parallel devices.
-Cell opamp_realcomp3_usefinger (0) disconnected node: in_n
-Cell opamp_realcomp3_usefinger (0) disconnected node: in_p
 Subcircuit summary:
 Circuit 1: opamp_realcomp3_usefinger       |Circuit 2: opamp_realcomp3_usefinger       
 -------------------------------------------|-------------------------------------------
@@ -85,12 +81,11 @@ Circuit 1: opamp_realcomp3_usefinger       |Circuit 2: opamp_realcomp3_usefinger
 -------------------------------------------|-------------------------------------------
 bias_0p7                                   |bias_0p7                                   
 vss                                        |vss                                        
+in_n                                       |in_n                                       
+in_p                                       |in_p                                       
 out                                        |out                                        
 vdd                                        |vdd                                        
-(no matching pin)                          |in_n                                       
-(no matching pin)                          |in_p                                       
-in_n                                       |(no matching pin)                          
-in_p                                       |(no matching pin)                          
 ---------------------------------------------------------------------------------------
-Cell pin lists for opamp_realcomp3_usefinger and opamp_realcomp3_usefinger altered to match.
-Cells failed matching, or top level cell failed pin matching.
+Cell pin lists are equivalent.
+Device classes opamp_realcomp3_usefinger and opamp_realcomp3_usefinger are equivalent.
+Circuits match uniquely.
