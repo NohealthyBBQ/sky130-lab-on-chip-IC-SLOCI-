@@ -1,0 +1,33 @@
+** sch_path: /foss/designs/sumprj/hiarachy_final/output_buffer.sch
+.subckt output_buffer SUB GND INA BIAS VDD OUTA OUTB INB
+*.PININFO SUB:I GND:I INA:I BIAS:I VDD:I OUTA:O OUTB:O INB:I
+XM42 net2 INA net1 SUB sky130_fd_pr__nfet_01v8_lvt L=0.15 W=4 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM43 net3 INB net1 SUB sky130_fd_pr__nfet_01v8_lvt L=0.15 W=4 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XR1 net2 VDD SUB sky130_fd_pr__res_high_po_2p85 L=7.6 mult=1 m=1
+XR2 net3 VDD SUB sky130_fd_pr__res_high_po_2p85 L=7.6 mult=1 m=1
+XM32 OUTA net2 net4 SUB sky130_fd_pr__nfet_01v8_lvt L=0.15 W=20 nf=20 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM33 OUTB net3 net4 SUB sky130_fd_pr__nfet_01v8_lvt L=0.15 W=20 nf=20 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1 net1 BIAS GND SUB sky130_fd_pr__nfet_01v8_lvt L=0.15 W=20 nf=20 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 net1 BIAS GND SUB sky130_fd_pr__nfet_01v8_lvt L=0.15 W=20 nf=20 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 net4 BIAS GND SUB sky130_fd_pr__nfet_01v8_lvt L=0.15 W=60 nf=60 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 net4 BIAS GND SUB sky130_fd_pr__nfet_01v8_lvt L=0.15 W=60 nf=60 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XR29 OUTA VDD SUB sky130_fd_pr__res_high_po_5p73 L=16.4 mult=1 m=1
+XR3 OUTB VDD SUB sky130_fd_pr__res_high_po_5p73 L=16.4 mult=1 m=1
+.ends
+.end
