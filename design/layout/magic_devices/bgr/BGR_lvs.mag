@@ -1,0 +1,33 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1662757988
+use XM_bjt  XM_bjt_0
+timestamp 1662737136
+transform 1 0 -12578 0 1 -7920
+box 0 0 6492 9068
+use XM_feedbackmir  XM_feedbackmir_0
+timestamp 1662675866
+transform 1 0 -10056 0 1 11552
+box -700 -500 2900 3100
+use XM_otabias_nmos  XM_otabias_nmos_0
+timestamp 1662726146
+transform 1 0 -13155 0 1 11149
+box -53 -53 1339 1105
+use XM_otabias_pmos  XM_otabias_pmos_0
+timestamp 1662721300
+transform 1 0 -13043 0 1 12529
+box -53 -53 1571 879
+use XM_pdn  XM_pdn_0
+timestamp 1662734962
+transform 1 0 -5071 0 1 11752
+box -53 -718 5502 1420
+use opamp_realcomp3_usefinger  opamp_realcomp3_usefinger_0
+timestamp 1662739988
+transform 1 0 -8840 0 1 1874
+box -5380 594 6776 6403
+use opamp_realcomp3_usefinger  opamp_realcomp3_usefinger_1
+timestamp 1662739988
+transform 1 0 5550 0 1 2632
+box -5380 594 6776 6403
+<< end >>

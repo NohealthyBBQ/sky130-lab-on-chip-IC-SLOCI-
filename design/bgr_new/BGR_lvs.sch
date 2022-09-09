@@ -493,6 +493,20 @@ N 380 -140 440 -140 {
 lab=VSS}
 N 280 -140 280 -10 {
 lab=VSS}
+N 130 120 170 120 {
+lab=VSS}
+N 130 120 130 180 {
+lab=VSS}
+N 130 180 170 180 {
+lab=VSS}
+N 210 150 260 150 {
+lab=VSS}
+N 260 150 260 210 {
+lab=VSS}
+N 130 210 260 210 {
+lab=VSS}
+N 130 180 130 210 {
+lab=VSS}
 C {sky130_fd_pr/pnp_05v5.sym} -950 -70 0 1 {name=Q2
 model=pnp_05v5_W3p40L3p40
 spiceprefix=X
@@ -1026,3 +1040,9 @@ L=16
 model=res_high_po_1p41
 spiceprefix=X
 mult=1}
+C {sky130_fd_pr/pnp_05v5.sym} 190 150 0 1 {name=Q4
+model=pnp_05v5_W3p40L3p40
+*model="pnp_05v5_W3p40L3p40 m=8"
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 130 200 0 0 {name=l38 lab=VSS}
