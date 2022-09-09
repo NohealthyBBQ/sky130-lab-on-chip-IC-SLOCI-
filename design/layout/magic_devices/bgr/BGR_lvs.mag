@@ -1,11 +1,15 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1662757988
+timestamp 1662758895
 use XM_bjt  XM_bjt_0
 timestamp 1662737136
 transform 1 0 -12578 0 1 -7920
 box 0 0 6492 9068
+use XM_bjt_out  XM_bjt_out_0
+timestamp 1662758408
+transform 1 0 -4494 0 1 -6504
+box 0 0 3916 3916
 use XM_feedbackmir  XM_feedbackmir_0
 timestamp 1662675866
 transform 1 0 -10056 0 1 11552
@@ -30,4 +34,12 @@ use opamp_realcomp3_usefinger  opamp_realcomp3_usefinger_1
 timestamp 1662739988
 transform 1 0 5550 0 1 2632
 box -5380 594 6776 6403
+use sky130_fd_pr__res_high_po_1p41_LKUZST  sky130_fd_pr__res_high_po_1p41_LKUZST_0
+timestamp 1662758895
+transform 1 0 2224 0 1 -659
+box -307 -1408 307 1408
+use sky130_fd_pr__res_high_po_1p41_S8KB58  sky130_fd_pr__res_high_po_1p41_S8KB58_0
+timestamp 1662758895
+transform 1 0 3631 0 1 -3265
+box -307 -4837 307 4837
 << end >>
