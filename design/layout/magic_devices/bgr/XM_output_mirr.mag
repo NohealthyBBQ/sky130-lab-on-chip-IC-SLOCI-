@@ -1,7 +1,10 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1662766814
+timestamp 1662767476
+<< metal1 >>
+rect 62 -98 1828 56
+rect 62 -3610 1828 -3456
 use sky130_fd_pr__nfet_01v8_lvt_64DJ5N  sky130_fd_pr__nfet_01v8_lvt_64DJ5N_0
 timestamp 1662766393
 transform 1 0 945 0 1 -899
