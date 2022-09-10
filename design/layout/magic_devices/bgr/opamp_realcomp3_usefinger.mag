@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1662835733
+timestamp 1662836520
 << locali >>
 rect -5320 3700 -2040 3760
 rect -5320 3600 -5220 3700
@@ -312,7 +312,7 @@ rect 5140 740 6740 860
 rect -970 720 6740 740
 rect -5380 660 6740 720
 use XM_actload2  XM_actload2_0
-timestamp 1662591347
+timestamp 1662836520
 transform 1 0 -2047 0 1 753
 box -53 -53 2571 3173
 use XM_cs  XM_cs_0
