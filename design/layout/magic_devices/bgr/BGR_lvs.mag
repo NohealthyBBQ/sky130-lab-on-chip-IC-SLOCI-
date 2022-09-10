@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1662836719
+timestamp 1662837810
 << nwell >>
 rect -8726 10225 -8100 11452
 << locali >>
@@ -17,6 +17,7 @@ rect -8780 8760 -8770 8820
 rect -10090 8240 -10080 8300
 rect -10020 8240 -10010 8300
 rect -10080 7780 -9980 7920
+rect -9180 4980 -9120 7840
 << via1 >>
 rect -8840 8760 -8780 8820
 rect -10080 8240 -10020 8300
@@ -141,4 +142,6 @@ use sky130_fd_pr__res_high_po_1p41_S8KB58  sky130_fd_pr__res_high_po_1p41_S8KB58
 timestamp 1662758895
 transform 0 1 -3253 -1 0 11177
 box -307 -4837 307 4837
+<< labels >>
+flabel metal2 -9540 5700 -9480 7680 0 FreeSans 800 0 0 0 vb
 << end >>
