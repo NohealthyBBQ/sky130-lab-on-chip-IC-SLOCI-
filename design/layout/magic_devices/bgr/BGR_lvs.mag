@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1662827686
+timestamp 1662831137
 << nwell >>
 rect -8726 10225 -8100 11452
 << metal2 >>
@@ -15,9 +15,9 @@ timestamp 1662737136
 transform 1 0 -1980 0 1 -2620
 box 0 0 6492 9068
 use XM_bjt_out  XM_bjt_out_0
-timestamp 1662758408
+timestamp 1662830870
 transform 1 0 -1980 0 1 6780
-box 0 0 3916 3916
+box 0 0 6492 3916
 use XM_feedbackmir2  XM_feedbackmir2_0
 timestamp 1662719914
 transform 1 0 -10781 0 1 9846
