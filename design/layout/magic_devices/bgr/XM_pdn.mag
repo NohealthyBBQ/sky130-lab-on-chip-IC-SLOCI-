@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1662734962
+timestamp 1662820526
 << locali >>
 rect 97 967 131 1046
 rect 484 968 518 1047
@@ -74,6 +74,4 @@ use sky130_fd_pr__res_high_po_1p41_2TBR6S  sky130_fd_pr__res_high_po_1p41_2TBR6S
 timestamp 1662731843
 transform 0 1 3304 -1 0 -411
 box -307 -2198 307 2198
-<< labels >>
-flabel space 1350 1292 1604 1420 0 FreeSans 800 0 0 0 TODO_CAP_NEED_GND
 << end >>
