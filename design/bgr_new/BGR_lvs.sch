@@ -195,8 +195,6 @@ N 660 -280 660 -250 {
 lab=vfeedback}
 N 660 -250 660 -220 {
 lab=vfeedback}
-N 610 -20 610 -10 {
-lab=VSS}
 N 840 -100 840 -70 {
 lab=voutb1}
 N 840 -200 840 -160 {
@@ -225,12 +223,6 @@ N 790 -10 840 -10 {
 lab=VSS}
 N 660 -220 660 -160 {
 lab=vfeedback}
-N 610 -100 640 -100 {
-lab=VSS}
-N 660 -70 660 -10 {
-lab=VSS}
-N 610 -90 610 -20 {
-lab=VSS}
 N 660 -160 660 -130 {
 lab=vfeedback}
 N 0 -10 370 -10 {
@@ -342,17 +334,17 @@ lab=voutb1}
 N 1160 -130 1190 -130 {
 lab=voutb2}
 N 1060 -130 1090 -130 {
-lab=#net8}
+lab=VSS}
 N 1090 -130 1090 -100 {
-lab=#net8}
+lab=VSS}
 N 1060 -40 1090 -40 {
 lab=VSS}
 N 1090 -40 1090 -10 {
 lab=VSS}
 N 1230 -130 1260 -130 {
-lab=#net9}
+lab=VSS}
 N 1260 -130 1260 -100 {
-lab=#net9}
+lab=VSS}
 N 1230 -40 1260 -40 {
 lab=VSS}
 N 1260 -40 1260 -10 {
@@ -363,8 +355,6 @@ N 280 -280 660 -280 {
 lab=vfeedback}
 N -1310 -10 -1270 -10 {
 lab=VSS}
-N 610 -100 610 -90 {
-lab=VSS}
 N 1400 -100 1400 -70 {
 lab=#net10}
 N 1400 -200 1400 -160 {
@@ -374,9 +364,9 @@ lab=voutb1}
 N 1330 -130 1360 -130 {
 lab=voutb2}
 N 1400 -130 1430 -130 {
-lab=#net10}
+lab=VSS}
 N 1430 -130 1430 -100 {
-lab=#net10}
+lab=VSS}
 N 1400 -40 1430 -40 {
 lab=VSS}
 N 1430 -40 1430 -10 {
@@ -394,9 +384,9 @@ lab=voutb1}
 N 1540 -130 1570 -130 {
 lab=voutb2}
 N 1610 -130 1640 -130 {
-lab=#net11}
+lab=VSS}
 N 1640 -130 1640 -100 {
-lab=#net11}
+lab=VSS}
 N 1610 -40 1640 -40 {
 lab=VSS}
 N 1640 -40 1640 -10 {
@@ -412,9 +402,9 @@ lab=voutb1}
 N 1710 -130 1740 -130 {
 lab=voutb2}
 N 1780 -130 1810 -130 {
-lab=#net12}
+lab=VSS}
 N 1810 -130 1810 -100 {
-lab=#net12}
+lab=VSS}
 N 1780 -40 1810 -40 {
 lab=VSS}
 N 1810 -40 1810 -10 {
@@ -434,9 +424,9 @@ lab=voutb1}
 N 1900 -130 1930 -130 {
 lab=voutb2}
 N 1970 -130 2000 -130 {
-lab=#net13}
+lab=VSS}
 N 2000 -130 2000 -100 {
-lab=#net13}
+lab=VSS}
 N 1970 -40 2000 -40 {
 lab=VSS}
 N 2000 -40 2000 -10 {
@@ -452,9 +442,9 @@ lab=voutb1}
 N 2070 -130 2100 -130 {
 lab=voutb2}
 N 2140 -130 2170 -130 {
-lab=#net14}
+lab=VSS}
 N 2170 -130 2170 -100 {
-lab=#net14}
+lab=VSS}
 N 2140 -40 2170 -40 {
 lab=VSS}
 N 2170 -40 2170 -10 {
@@ -493,13 +483,34 @@ N 130 210 260 210 {
 lab=VSS}
 N 130 180 130 210 {
 lab=VSS}
-N 1090 -100 1090 -40 {}
-N 1260 -100 1260 -40 {}
-N 1430 -100 1430 -40 {}
-N 1640 -100 1640 -40 {}
-N 1810 -100 1810 -40 {}
-N 2000 -100 2000 -40 {}
-N 2170 -100 2170 -40 {}
+N 1090 -100 1090 -40 {
+lab=VSS}
+N 1260 -100 1260 -40 {
+lab=VSS}
+N 1430 -100 1430 -40 {
+lab=VSS}
+N 1640 -100 1640 -40 {
+lab=VSS}
+N 1810 -100 1810 -40 {
+lab=VSS}
+N 2000 -100 2000 -40 {
+lab=VSS}
+N 2170 -100 2170 -40 {
+lab=VSS}
+N 660 -130 660 -80 {
+lab=vfeedback}
+N 610 -80 660 -80 {
+lab=vfeedback}
+N 530 -80 550 -80 {
+lab=#net15}
+N 440 -80 470 -80 {
+lab=VSS}
+N 440 -80 440 -10 {
+lab=VSS}
+N 500 -60 500 -10 {
+lab=VSS}
+N 580 -60 580 -10 {
+lab=VSS}
 C {sky130_fd_pr/pnp_05v5.sym} -950 -70 0 1 {name=Q2
 model=pnp_05v5_W3p40L3p40
 spiceprefix=X
@@ -981,38 +992,32 @@ C {devices/lab_pin.sym} 2080 -130 0 0 {name=l33 lab=voutb2}
 C {opin.sym} 2140 -200 0 0 {name=p11 lab=Iout6}
 C {sky130_fd_pr/res_xhigh_po_5p73.sym} 200 -160 3 0 {name=Rref_xhigh
 W=5.73
-L=104
+L=106
 model=res_xhigh_po_5p73
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_xhigh_po_5p73.sym} 260 -160 3 0 {name=Rref_xhigh1
 W=5.73
-L=104
+L=106
 model=res_xhigh_po_5p73
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_xhigh_po_5p73.sym} 320 -160 3 0 {name=Rref_xhigh2
 W=5.73
-L=104
+L=106
 model=res_xhigh_po_5p73
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_xhigh_po_5p73.sym} 380 -160 3 0 {name=Rref_xhigh3
 W=5.73
-L=104
+L=106
 model=res_xhigh_po_5p73
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_xhigh_po_5p73.sym} 440 -160 3 0 {name=Rref_xhigh4
 W=5.73
-L=104
+L=106
 model=res_xhigh_po_5p73
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_high_po_1p41.sym} 660 -100 0 0 {name=Rref_high
-W=1.41
-L=153.5
-model=res_high_po_1p41
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_high_po_1p41.sym} 0 -300 0 0 {name=R4
@@ -1039,3 +1044,15 @@ model=pnp_05v5_W3p40L3p40
 spiceprefix=X
 }
 C {devices/lab_pin.sym} 130 200 0 0 {name=l38 lab=VSS}
+C {sky130_fd_pr/res_high_po_1p41.sym} 500 -80 3 0 {name=Rref_high1
+W=1.41
+L=47.5
+model=res_high_po_1p41
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po_1p41.sym} 580 -80 3 0 {name=Rref_high2
+W=1.41
+L=104
+model=res_high_po_1p41
+spiceprefix=X
+mult=1}
