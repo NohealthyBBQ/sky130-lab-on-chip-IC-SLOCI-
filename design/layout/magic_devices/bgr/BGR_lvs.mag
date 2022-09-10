@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1662820796
+timestamp 1662821257
 << nwell >>
 rect -8726 10225 -8100 11452
 use XM_Rref  XM_Rref_0
@@ -14,7 +14,7 @@ transform 1 0 -12578 0 1 -7920
 box 0 0 6492 9068
 use XM_bjt_out  XM_bjt_out_0
 timestamp 1662758408
-transform 1 0 -4494 0 1 -6504
+transform 1 0 -1594 0 1 8320
 box 0 0 3916 3916
 use XM_feedbackmir2  XM_feedbackmir2_0
 timestamp 1662719914
@@ -46,7 +46,7 @@ transform 1 0 -8840 0 1 1874
 box -5380 594 6776 6403
 use opamp_realcomp3_usefinger  opamp_realcomp3_usefinger_1
 timestamp 1662739988
-transform 1 0 5550 0 1 2632
+transform 1 0 3470 0 1 1876
 box -5380 594 6776 6403
 use sky130_fd_pr__res_high_po_1p41_6ZUZ5C  sky130_fd_pr__res_high_po_1p41_6ZUZ5C_0
 timestamp 1662820359
