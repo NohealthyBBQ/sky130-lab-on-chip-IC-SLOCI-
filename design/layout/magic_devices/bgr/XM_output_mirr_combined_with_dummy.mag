@@ -1,0 +1,40 @@
+magic
+tech sky130A
+timestamp 1662816987
+use XM_output_mirr_combined  XM_output_mirr_combined_0
+timestamp 1662815693
+transform 1 0 0 0 1 0
+box 0 0 8950 3800
+use XM_output_mirr_combined  XM_output_mirr_combined_1
+timestamp 1662815693
+transform 1 0 0 0 1 3700
+box 0 0 8950 3800
+use XM_output_mirr_combined  XM_output_mirr_combined_2
+timestamp 1662815693
+transform 1 0 0 0 1 -3700
+box 0 0 8950 3800
+use XM_output_mirr_combined  XM_output_mirr_combined_3
+timestamp 1662815693
+transform 1 0 -8800 0 1 3700
+box 0 0 8950 3800
+use XM_output_mirr_combined  XM_output_mirr_combined_4
+timestamp 1662815693
+transform 1 0 -8800 0 1 0
+box 0 0 8950 3800
+use XM_output_mirr_combined  XM_output_mirr_combined_5
+timestamp 1662815693
+transform 1 0 -8800 0 1 -3700
+box 0 0 8950 3800
+use XM_output_mirr_combined  XM_output_mirr_combined_6
+timestamp 1662815693
+transform 1 0 8800 0 1 3700
+box 0 0 8950 3800
+use XM_output_mirr_combined  XM_output_mirr_combined_7
+timestamp 1662815693
+transform 1 0 8800 0 1 0
+box 0 0 8950 3800
+use XM_output_mirr_combined  XM_output_mirr_combined_8
+timestamp 1662815693
+transform 1 0 8800 0 1 -3700
+box 0 0 8950 3800
+<< end >>
