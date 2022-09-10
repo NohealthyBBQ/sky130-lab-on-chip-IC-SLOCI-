@@ -1,14 +1,14 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1662759772
+timestamp 1662826901
 << metal1 >>
-rect 1100 21400 1500 21700
-rect 3600 21400 4000 21700
-rect 2400 200 2700 500
-rect 4800 200 5300 500
-use sky130_fd_pr__res_xhigh_po_5p73_UEKJUG  sky130_fd_pr__res_xhigh_po_5p73_UEKJUG_0
-timestamp 1662759368
-transform 1 0 3170 0 1 10945
-box -3223 -10998 3223 10998
+rect 1132 20636 1238 21045
+rect 3616 20636 3722 21045
+rect -110 -995 -4 -586
+rect 2374 -995 2480 -586
+use sky130_fd_pr__res_xhigh_po_5p73_UZMRKM  sky130_fd_pr__res_xhigh_po_5p73_UZMRKM_0
+timestamp 1662826682
+transform 1 0 1806 0 1 10025
+box -3223 -11198 3223 11198
 << end >>

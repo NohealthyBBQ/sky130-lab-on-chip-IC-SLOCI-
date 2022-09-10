@@ -1,15 +1,15 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1662822394
+timestamp 1662826969
 << nwell >>
 rect -8726 10225 -8100 11452
 << metal2 >>
 rect -14220 2430 -14130 2464
 use XM_Rref  XM_Rref_0
-timestamp 1662759772
-transform 0 1 -14147 -1 0 -4407
-box -53 -53 6393 21943
+timestamp 1662826901
+transform 0 1 -13051 -1 0 -5835
+box -1417 -1173 5029 21223
 use XM_bjt  XM_bjt_0
 timestamp 1662737136
 transform 1 0 -1980 0 1 -2620
