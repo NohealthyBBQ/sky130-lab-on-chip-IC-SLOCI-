@@ -1,14 +1,14 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1662826969
+timestamp 1662827686
 << nwell >>
 rect -8726 10225 -8100 11452
 << metal2 >>
 rect -14220 2430 -14130 2464
 use XM_Rref  XM_Rref_0
 timestamp 1662826901
-transform 0 1 -13051 -1 0 -5835
+transform 0 1 -13057 -1 0 -5305
 box -1417 -1173 5029 21223
 use XM_bjt  XM_bjt_0
 timestamp 1662737136
@@ -36,7 +36,7 @@ transform 1 0 -10817 0 1 8939
 box -53 -53 1571 879
 use XM_output_mirr_combined_with_dummy  XM_output_mirr_combined_with_dummy_0
 timestamp 1662816987
-transform 1 0 42030 0 1 -3450
+transform 1 0 26563 0 1 -3003
 box -17600 -7400 35500 15000
 use XM_pdn  XM_pdn_0
 timestamp 1662820526
@@ -54,10 +54,14 @@ use sky130_fd_pr__res_high_po_1p41_6ZUZ5C  sky130_fd_pr__res_high_po_1p41_6ZUZ5C
 timestamp 1662820359
 transform 1 0 -8623 0 1 7103
 box -307 -1408 307 1408
-use sky130_fd_pr__res_high_po_1p41_7S2UWS  sky130_fd_pr__res_high_po_1p41_7S2UWS_0
-timestamp 1662760251
-transform 0 1 1718 -1 0 -3813
-box -307 -15948 307 15948
+use sky130_fd_pr__res_high_po_1p41_GWJZ59  sky130_fd_pr__res_high_po_1p41_GWJZ59_0
+timestamp 1662827202
+transform 0 1 -3232 -1 0 -3669
+box -307 -10998 307 10998
+use sky130_fd_pr__res_high_po_1p41_HX7ZEK  sky130_fd_pr__res_high_po_1p41_HX7ZEK_0
+timestamp 1662827686
+transform 0 1 3187 -1 0 -3015
+box -307 -5348 307 5348
 use sky130_fd_pr__res_high_po_1p41_S8KB58  sky130_fd_pr__res_high_po_1p41_S8KB58_0
 timestamp 1662758895
 transform 0 1 -3253 -1 0 11177
