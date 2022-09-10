@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1662721300
+timestamp 1662818872
 << metal1 >>
 rect 70 680 80 740
 rect 140 680 150 740
@@ -71,8 +71,8 @@ rect 400 160 860 220
 rect 920 160 1380 220
 rect 340 150 400 160
 rect 1380 150 1440 160
-use sky130_fd_pr__pfet_01v8_lvt_9UVN44  sky130_fd_pr__pfet_01v8_lvt_9UVN44_0
-timestamp 1662720466
+use sky130_fd_pr__pfet_01v8_lvt_MUAP4U  sky130_fd_pr__pfet_01v8_lvt_MUAP4U_0
+timestamp 1662818872
 transform 1 0 759 0 1 413
 box -812 -466 812 466
 << end >>

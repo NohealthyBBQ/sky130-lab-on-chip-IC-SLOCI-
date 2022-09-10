@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1662815332
+timestamp 1662819653
 use XM_Rref  XM_Rref_0
 timestamp 1662759772
 transform 1 0 13353 0 1 -7951
@@ -16,23 +16,27 @@ transform 1 0 -4494 0 1 -6504
 box 0 0 3916 3916
 use XM_feedbackmir2  XM_feedbackmir2_0
 timestamp 1662719914
-transform 1 0 2220 0 1 11296
+transform 1 0 -10781 0 1 9560
 box -140 -160 2080 1600
 use XM_feedbackmir  XM_feedbackmir_0
 timestamp 1662675866
-transform 1 0 -10056 0 1 11552
+transform 1 0 -13500 0 1 8100
 box -700 -500 2900 3100
 use XM_otabias_nmos  XM_otabias_nmos_0
-timestamp 1662726146
-transform 1 0 -13155 0 1 11149
+timestamp 1662818991
+transform 1 0 -16140 0 1 2328
 box -53 -53 1339 1105
 use XM_otabias_pmos  XM_otabias_pmos_0
-timestamp 1662721300
-transform 1 0 -13043 0 1 12529
+timestamp 1662818872
+transform 1 0 -10817 0 1 8653
 box -53 -53 1571 879
+use XM_output_mirr_combined_with_dummy  XM_output_mirr_combined_with_dummy_0
+timestamp 1662816987
+transform 1 0 41878 0 1 -1258
+box -17600 -7400 35500 15000
 use XM_pdn  XM_pdn_0
 timestamp 1662734962
-transform 1 0 -5071 0 1 11752
+transform 1 0 -8780 0 1 9448
 box -53 -718 5502 1420
 use opamp_realcomp3_usefinger  opamp_realcomp3_usefinger_0
 timestamp 1662739988
@@ -46,12 +50,12 @@ use sky130_fd_pr__res_high_po_1p41_7S2UWS  sky130_fd_pr__res_high_po_1p41_7S2UWS
 timestamp 1662760251
 transform 0 1 2958 -1 0 -10295
 box -307 -15948 307 15948
-use sky130_fd_pr__res_high_po_1p41_LKUZST  sky130_fd_pr__res_high_po_1p41_LKUZST_0
-timestamp 1662758895
-transform 1 0 2224 0 1 -659
-box -307 -1408 307 1408
 use sky130_fd_pr__res_high_po_1p41_S8KB58  sky130_fd_pr__res_high_po_1p41_S8KB58_0
 timestamp 1662758895
 transform 1 0 3631 0 1 -3265
 box -307 -4837 307 4837
+use sky130_fd_pr__res_high_po_1p41_ZUUZMG  sky130_fd_pr__res_high_po_1p41_ZUUZMG_0
+timestamp 1662819631
+transform 1 0 -9193 0 1 7103
+box -307 -1408 307 1408
 << end >>
