@@ -671,20 +671,6 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} -1310 -70 2 1 {name=l2 lab=Vota_bias1}
 C {devices/lab_pin.sym} -640 -430 2 0 {name=l18 lab=Vota_bias1}
-C {sky130_fd_pr/nfet_01v8_lvt.sym} -240 -420 0 0 {name=Mpdn
-L=0.5
-W=1.5
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8_lvt
-spiceprefix=X
-}
 C {devices/lab_pin.sym} -260 -420 0 0 {name=l26 lab=porst_buff}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 640 -470 0 0 {name=M11
 L=1
@@ -1143,3 +1129,17 @@ model=pfet_01v8_lvt
 spiceprefix=X
 }
 C {devices/lab_wire.sym} 1550 -610 0 1 {name=l40 lab=VDD}
+C {sky130_fd_pr/nfet_01v8.sym} -240 -420 0 0 {name=Mpdn
+L=0.5
+W=1.5
+nf=1 
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
