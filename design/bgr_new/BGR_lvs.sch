@@ -1076,13 +1076,13 @@ model=pnp_05v5_W3p40L3p40
 spiceprefix=X
 }
 C {devices/lab_pin.sym} 1050 -380 0 0 {name=l38 lab=VSS}
-C {sky130_fd_pr/res_high_po_1p41.sym} 500 -80 3 0 {name=Rref_high1
+C {sky130_fd_pr/res_high_po_1p41.sym} 580 -80 3 0 {name=Rref_high1
 W=1.41
 L=47.5
 model=res_high_po_1p41
 spiceprefix=X
 mult=1}
-C {sky130_fd_pr/res_high_po_1p41.sym} 580 -80 3 0 {name=Rref_high2
+C {sky130_fd_pr/res_high_po_1p41.sym} 500 -80 3 0 {name=Rref_high2
 W=1.41
 L=104
 model=res_high_po_1p41
