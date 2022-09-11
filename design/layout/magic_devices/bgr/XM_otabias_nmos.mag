@@ -1,9 +1,9 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1662818991
-use sky130_fd_pr__nfet_01v8_lvt_WLEYVS  sky130_fd_pr__nfet_01v8_lvt_WLEYVS_0
-timestamp 1662818991
-transform 1 0 643 0 1 526
-box -696 -579 696 579
+timestamp 1662916051
+use sky130_fd_pr__nfet_01v8_lvt_QA4PPD  sky130_fd_pr__nfet_01v8_lvt_QA4PPD_0
+timestamp 1662916051
+transform 1 0 543 0 1 626
+box -596 -679 596 679
 << end >>

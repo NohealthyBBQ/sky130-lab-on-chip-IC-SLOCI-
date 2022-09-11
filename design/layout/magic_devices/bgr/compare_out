@@ -176,7 +176,7 @@ Flattening unmatched subcell XM_bjt_out in circuit BGR_lvs (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 in circuit BGR_lvs (0)(15 instances)
 Flattening unmatched subcell sky130_fd_pr__res_high_po_1p41_HX7ZEK in circuit BGR_lvs (0)(1 instance)
 Flattening unmatched subcell XM_otabias_nmos in circuit BGR_lvs (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_WLEYVS in circuit BGR_lvs (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_QA4PPD in circuit BGR_lvs (0)(1 instance)
 Flattening unmatched subcell XM_output_mirr_combined_with_dummy in circuit BGR_lvs (0)(1 instance)
 Flattening unmatched subcell XM_output_mirr_combined in circuit BGR_lvs (0)(9 instances)
 Flattening unmatched subcell XM_output_mirr in circuit BGR_lvs (0)(72 instances)
@@ -207,9 +207,6 @@ Resolving automorphisms by pin name.
 Netlists match uniquely.
 Circuits match correctly.
 There were property errors.
-XM_otabias_nmos_0//sky130_fd_pr__nfet_01v8_lvt_WLEYVS_0/sky130_fd_pr__nfet_01v8_lvt:0 vs. sky130_fd_pr__nfet_01v8_lvt:Mota_bias_n:
- l circuit1: 5   circuit2: 4   (delta=22.2%, cutoff=1%)
- w circuit1: 4   circuit2: 5   (delta=22.2%, cutoff=7%)
 XM_output_mirr_combined_with_dummy_0//XM_output_mirr_combined_1//XM_output_mirr_0//sky130_fd_pr__nfet_01v8_lvt_64DJ5N_0/sky130_fd_pr__nfet_01v8_lvt:0 vs. sky130_fd_pr__nfet_01v8_lvt:M1:
  w circuit1: 8192   circuit2: 1024   (delta=156%, cutoff=7%)
 Circuit 2 parallel/series network does not match Circuit 1
