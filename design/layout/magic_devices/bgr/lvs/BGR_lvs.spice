@@ -39,7 +39,7 @@ X0 c1_n2350_n580# m3_n2450_n680# sky130_fd_pr__cap_mim_m3_1 l=5.8e+06u w=2.3e+07
 .ends
 
 .subckt XM_pdn sky130_fd_pr__cap_mim_m3_1_Y9W37A_0/c1_n2350_n580# sky130_fd_pr__nfet_01v8_Y5UG24_2/a_n108_n181#
-+ li_97_967# sky130_fd_pr__nfet_01v8_Y5UG24_2/a_50_n181# VSUBS
++ m1_160_n220# li_97_967# sky130_fd_pr__nfet_01v8_Y5UG24_2/a_50_n181# VSUBS
 Xsky130_fd_pr__pfet_01v8_TSNZVH_0 m1_280_n320# li_97_967# li_97_967# m1_160_n220#
 + sky130_fd_pr__pfet_01v8_TSNZVH
 Xsky130_fd_pr__pfet_01v8_TSNZVH_1 m1_660_n320# li_97_967# li_97_967# m1_280_n320#
@@ -797,36 +797,27 @@ XXM_output_mirr_combined_8 VSUBS VSUBS VSUBS VSUBS VSUBS VSUBS VSUBS VSUBS VSUBS
 + VSUBS VSUBS VSUBS XM_output_mirr_combined
 .ends
 
-.subckt BGR_lvs
-XXM_Rref_0 VSUBS vd4 VSUBS XM_Rref
-Xsky130_fd_pr__res_high_po_1p41_S8KB58_0 opamp_realcomp3_usefinger_1/in_n vbe3 VSUBS
-+ sky130_fd_pr__res_high_po_1p41_S8KB58
-XXM_pdn_0 VSUBS vgate XM_feedbackmir_0/B VSUBS VSUBS XM_pdn
-XXM_current_gate_with_dummy_0 XM_feedbackmir_0/B XM_feedbackmir_0/B opamp_realcomp3_usefinger_1/out
-+ XM_feedbackmir_0/B voutb2 XM_feedbackmir_0/B XM_feedbackmir_0/B XM_feedbackmir_0/B
-+ XM_feedbackmir_0/B XM_feedbackmir_0/B XM_feedbackmir_0/B XM_feedbackmir_0/B XM_feedbackmir_0/B
-+ XM_feedbackmir_0/B XM_feedbackmir_0/B XM_feedbackmir_0/B XM_feedbackmir_0/B XM_feedbackmir_0/B
-+ XM_feedbackmir_0/B XM_feedbackmir_0/B XM_feedbackmir_0/B vd4 XM_feedbackmir_0/B
-+ XM_feedbackmir_0/B XM_feedbackmir_0/B XM_feedbackmir_0/B XM_feedbackmir_0/B XM_feedbackmir_0/B
-+ XM_current_gate_with_dummy
-XXM_feedbackmir_0 XM_feedbackmir_0/B XM_feedbackmir_0/B opamp_realcomp3_usefinger_0/in_n
-+ vb vgate XM_feedbackmir
-XXM_bjt_0 XM_bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[6|4]/Emitter opamp_realcomp3_usefinger_0/in_n
-+ VSUBS XM_bjt
-Xsky130_fd_pr__res_high_po_1p41_GWJZ59_0 VSUBS VSUBS m1_n1770_n3060# sky130_fd_pr__res_high_po_1p41_GWJZ59
-Xsky130_fd_pr__res_high_po_1p41_6ZUZ5C_0 VSUBS XM_bjt_0/sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[6|4]/Emitter
-+ vb sky130_fd_pr__res_high_po_1p41_6ZUZ5C
-XXM_otabias_pmos_0 vgate Vota_bias1 XM_feedbackmir_0/B XM_feedbackmir_0/B XM_otabias_pmos
-XXM_feedbackmir2_0 opamp_realcomp3_usefinger_1/in_n vgate vgate XM_feedbackmir_0/B
-+ vgate vgate XM_feedbackmir_0/B XM_feedbackmir2
-XXM_bjt_out_0 vbe3 VSUBS XM_bjt_out
+.subckt BGR_lvs Iout0 VDD VSS Iout1 Iout2 porst vbg Iout3 Iout4 Iout5 Iout6
+XXM_Rref_0 VSS vd4 VSS XM_Rref
+Xsky130_fd_pr__res_high_po_1p41_S8KB58_0 vbg vbe3 VSS sky130_fd_pr__res_high_po_1p41_S8KB58
+XXM_pdn_0 VSS vgate porst VDD VSS VSS XM_pdn
+XXM_current_gate_with_dummy_0 VDD VDD opamp_realcomp3_usefinger_1/out VDD voutb2 VDD
++ VDD VDD VDD VDD VDD VDD VDD VDD VDD VDD VDD VDD VDD VDD VDD vd4 VDD VDD VDD VDD
++ VDD VDD XM_current_gate_with_dummy
+XXM_feedbackmir_0 VDD VDD opamp_realcomp3_usefinger_0/in_n vb vgate XM_feedbackmir
+XXM_bjt_0 vbneg opamp_realcomp3_usefinger_0/in_n VSS XM_bjt
+Xsky130_fd_pr__res_high_po_1p41_GWJZ59_0 VSS VSS m1_n1770_n3060# sky130_fd_pr__res_high_po_1p41_GWJZ59
+Xsky130_fd_pr__res_high_po_1p41_6ZUZ5C_0 VSS vbneg vb sky130_fd_pr__res_high_po_1p41_6ZUZ5C
+XXM_otabias_pmos_0 vgate Vota_bias1 VDD VDD XM_otabias_pmos
+XXM_feedbackmir2_0 vbg vgate vgate VDD vgate vgate VDD XM_feedbackmir2
+XXM_bjt_out_0 vbe3 VSS XM_bjt_out
 Xopamp_realcomp3_usefinger_0 opamp_realcomp3_usefinger_0/in_n vb vgate Vota_bias1
-+ XM_feedbackmir_0/B VSUBS opamp_realcomp3_usefinger
-Xopamp_realcomp3_usefinger_1 opamp_realcomp3_usefinger_1/in_n vd4 opamp_realcomp3_usefinger_1/out
-+ Vota_bias1 XM_feedbackmir_0/B VSUBS opamp_realcomp3_usefinger
-Xsky130_fd_pr__res_high_po_1p41_HX7ZEK_0 VSUBS m1_n1770_n3060# vd4 sky130_fd_pr__res_high_po_1p41_HX7ZEK
-XXM_otabias_nmos_0 VSUBS Vota_bias1 VSUBS Vota_bias1 VSUBS XM_otabias_nmos
-XXM_output_mirr_combined_with_dummy_0 m2_38200_4100# voutb2 m2_36000_4100# m2_33800_4100#
-+ m2_42600_4100# m2_31600_4100# VSUBS m2_40400_4100# m2_29400_4100# VSUBS XM_output_mirr_combined_with_dummy
++ VDD VSS opamp_realcomp3_usefinger
+Xopamp_realcomp3_usefinger_1 vbg vd4 opamp_realcomp3_usefinger_1/out Vota_bias1 VDD
++ VSS opamp_realcomp3_usefinger
+Xsky130_fd_pr__res_high_po_1p41_HX7ZEK_0 VSS m1_n1770_n3060# vd4 sky130_fd_pr__res_high_po_1p41_HX7ZEK
+XXM_otabias_nmos_0 VSS Vota_bias1 VSS Vota_bias1 VSS XM_otabias_nmos
+XXM_output_mirr_combined_with_dummy_0 Iout4 voutb2 Iout3 Iout2 Iout6 Iout1 VSS Iout5
++ Iout0 VSS XM_output_mirr_combined_with_dummy
 .ends
 

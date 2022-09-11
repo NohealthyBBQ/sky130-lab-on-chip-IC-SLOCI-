@@ -19,9 +19,6 @@ XMfeedback_mir2 Vbg vgate VDD VDD sky130_fd_pr__pfet_01v8_lvt L=1 W=1 nf=1 ad='i
 + as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
 + nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=28 m=28
 XQ3 VSS VSS vbe3 sky130_fd_pr__pnp_05v5_W3p40L3p40
-XMpdn vgate porst_buff VSS VSS sky130_fd_pr__nfet_01v8_lvt L=0.5 W=1.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
-+ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
-+ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XM11 vd4 vcurrent_gate VDD VDD sky130_fd_pr__pfet_01v8_lvt L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
 + as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
 + nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=5 m=5
@@ -58,7 +55,7 @@ XM17 net4 voutb1 VSS VSS sky130_fd_pr__nfet_01v8_lvt L=2 W=8 nf=1 ad='int((nf+1)
 XM18 Iout1 voutb2 net4 VSS sky130_fd_pr__nfet_01v8_lvt L=2 W=8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
 + as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
 + nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=8 m=8
-XC_porst porst_buff VSS sky130_fd_pr__cap_mim_m3_1 W=16 L=20 MF=1 m=1
+XC_porst VSS porst_buff sky130_fd_pr__cap_mim_m3_1 W=16 L=20 MF=1 m=1
 XM19 net5 voutb1 VSS VSS sky130_fd_pr__nfet_01v8_lvt L=2 W=8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=8 m=8
@@ -111,6 +108,9 @@ XM2 VSS VSS net11 VSS sky130_fd_pr__nfet_01v8_lvt L=2 W=8 nf=1 ad='int((nf+1)/2)
 XM3 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8_lvt L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=80 m=80
+XMpdn vgate porst_buff VSS VSS sky130_fd_pr__nfet_01v8 L=0.5 W=1.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 .ends
 
 * expanding   symbol:  opamp/opamp_realcomp3_usefinger.sym # of pins=6
