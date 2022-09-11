@@ -109,4 +109,4 @@ C {noconn.sym} 350 -250 0 1 {name=l11}
 C {noconn.sym} 350 -240 0 1 {name=l13}
 C {noconn.sym} 350 -230 0 1 {name=l14}
 C {devices/vdd.sym} 230 -340 0 0 {name=l1 lab=VDD}
-C {bgr_new/BGR_lvs.sym} 10 -40 0 0 {name=X1}
+C {bgr_new/BGR_lvs_measurement.sym} 10 -40 0 0 {name=X1}

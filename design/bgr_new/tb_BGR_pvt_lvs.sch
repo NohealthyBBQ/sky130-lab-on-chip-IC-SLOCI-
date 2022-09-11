@@ -122,4 +122,4 @@ C {noconn.sym} 350 -250 2 0 {name=l10}
 C {noconn.sym} 350 -240 2 0 {name=l11}
 C {noconn.sym} 350 -230 2 0 {name=l13}
 C {noconn.sym} 350 -290 2 0 {name=l14}
-C {bgr_new/BGR_lvs.sym} 10 -40 0 0 {name=X1}
+C {bgr_new/BGR_lvs_measurement.sym} 10 -40 0 0 {name=X1}
