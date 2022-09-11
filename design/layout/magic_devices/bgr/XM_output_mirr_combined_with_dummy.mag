@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1662867857
+timestamp 1662903677
 << locali >>
 rect -8750 6930 -8740 6960
 rect -8750 6020 -8740 6050
@@ -136,6 +136,4 @@ use XM_output_mirr_combined  XM_output_mirr_combined_8
 timestamp 1662815693
 transform 1 0 8800 0 1 -3700
 box 0 0 8950 3800
-<< labels >>
-flabel space 40 44 8913 3752 0 FreeSans 6400 0 0 0 inner_core
 << end >>

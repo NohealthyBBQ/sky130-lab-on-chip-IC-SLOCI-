@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1662870854
+timestamp 1662903736
 << nwell >>
 rect -8726 10225 -8100 11452
 << locali >>
@@ -373,7 +373,7 @@ timestamp 1662818872
 transform 1 0 -10817 0 1 8939
 box -53 -53 1571 879
 use XM_output_mirr_combined_with_dummy  XM_output_mirr_combined_with_dummy_0
-timestamp 1662867857
+timestamp 1662903677
 transform 1 0 26905 0 1 -3003
 box -17600 -7400 35500 15000
 use XM_pdn  XM_pdn_0
@@ -411,6 +411,5 @@ flabel metal2 1160 8800 1380 11100 0 FreeSans 800 0 0 0 vbe3
 flabel metal1 -9200 -2991 -9100 5271 0 FreeSans 800 0 0 0 Vota_bias1
 flabel space -11280 2300 1400 2500 0 FreeSans 1600 0 0 0 va
 flabel metal3 6920 -3800 7040 -1540 0 FreeSans 1600 0 0 0 vd4
-flabel space 28400 -1800 43000 3800 0 FreeSans 12800 0 0 0 core
 flabel metal2 6420 320 6600 4600 0 FreeSans 3200 0 0 0 voutb2
 << end >>
