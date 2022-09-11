@@ -96,7 +96,6 @@ XRref_xhigh4 vd4 net14 VSS sky130_fd_pr__res_xhigh_po_5p73 L=106 mult=1 m=1
 XR4 vbe3 Vbg VSS sky130_fd_pr__res_high_po_1p41 L=42.39 mult=1 m=1
 XR3 vbneg Vb VSS sky130_fd_pr__res_high_po_1p41 L=8.1 mult=1 m=1
 XR_porst porst_buff net2 VSS sky130_fd_pr__res_high_po_1p41 L=16 mult=1 m=1
-XQ4 VSS VSS VSS sky130_fd_pr__pnp_05v5_W3p40L3p40
 XRref_high1 vd4 net10 VSS sky130_fd_pr__res_high_po_1p41 L=47.5 mult=1 m=1
 XRref_high2 net10 VSS VSS sky130_fd_pr__res_high_po_1p41 L=104 mult=1 m=1
 XM1 VSS VSS VSS VSS sky130_fd_pr__nfet_01v8_lvt L=2 W=8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
@@ -111,6 +110,7 @@ XM3 VDD VDD VDD VDD sky130_fd_pr__pfet_01v8_lvt L=1 W=1 nf=1 ad='int((nf+1)/2) *
 XMpdn vgate porst_buff VSS VSS sky130_fd_pr__nfet_01v8 L=0.5 W=1.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
 + as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
 + nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XQ4 VSS VSS VSS sky130_fd_pr__pnp_05v5_W3p40L3p40 m=14
 .ends
 
 * expanding   symbol:  opamp/opamp_realcomp3_usefinger.sym # of pins=6

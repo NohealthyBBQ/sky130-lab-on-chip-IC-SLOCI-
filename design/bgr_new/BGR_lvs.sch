@@ -1069,11 +1069,6 @@ L=16
 model=res_high_po_1p41
 spiceprefix=X
 mult=1}
-C {sky130_fd_pr/pnp_05v5.sym} 1110 -430 0 1 {name=Q4
-model=pnp_05v5_W3p40L3p40
-*model="pnp_05v5_W3p40L3p40 m=14"
-spiceprefix=X
-}
 C {devices/lab_pin.sym} 1050 -380 0 0 {name=l38 lab=VSS}
 C {sky130_fd_pr/res_high_po_1p41.sym} 580 -80 3 0 {name=Rref_high1
 W=1.41
@@ -1143,5 +1138,9 @@ ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
 nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pnp_05v5.sym} 1110 -430 0 1 {name=Q4
+model="pnp_05v5_W3p40L3p40 m=14"
 spiceprefix=X
 }
