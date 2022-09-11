@@ -16,8 +16,8 @@ N -510 -670 -310 -670 { lab=VDD}
 N -510 -330 -510 -310 { lab=Vb}
 N -510 -410 -510 -330 { lab=Vb}
 N 0 -460 0 -330 { lab=Vbg}
-N -510 -250 -510 -230 { lab=#net1}
-N -510 -540 -510 -470 { lab=#net2}
+N -510 -250 -510 -230 { lab=Vb}
+N -510 -540 -510 -470 { lab=Vb}
 N -510 -170 -510 -100 { lab=vbneg}
 N -470 -70 -470 -10 { lab=VSS}
 N -510 -40 -510 -10 { lab=VSS}
@@ -27,7 +27,7 @@ N -930 -70 -910 -70 { lab=VSS}
 N -910 -70 -910 -10 { lab=VSS}
 N -610 -200 -530 -200 { lab=VSS}
 N -610 -200 -610 -10 { lab=VSS}
-N -970 -250 -970 -100 { lab=Veb}
+N -970 -250 -970 -100 { lab=Va}
 N -620 -330 -510 -330 { lab=Vb}
 N -1270 -40 -1260 -40 { lab=VSS}
 N -1310 -70 -1310 -40 { lab=Vota_bias1}
@@ -39,7 +39,7 @@ N -120 -10 0 -10 { lab=VSS}
 N -970 -330 -970 -310 { lab=Va}
 N -550 -580 -550 -570 { lab=vgate}
 N -1010 -580 -1010 -570 { lab=vgate}
-N -970 -540 -970 -480 { lab=#net3}
+N -970 -540 -970 -480 { lab=Va}
 N -1270 -570 -1260 -570 { lab=VDD}
 N -1260 -600 -1260 -570 { lab=VDD}
 N -1270 -600 -1260 -600 { lab=VDD}
@@ -109,7 +109,7 @@ lab=VSS}
 N 0 -400 140 -400 {
 lab=Vbg}
 N -1270 -540 -1270 -470 {
-lab=#net4}
+lab=Vota_bias1}
 N -1270 -410 -1270 -350 {
 lab=Vota_bias1}
 N -90 -300 -20 -300 {
@@ -121,7 +121,7 @@ lab=vgate}
 N 0 -670 0 -600 {
 lab=VDD}
 N 0 -540 0 -520 {
-lab=#net5}
+lab=Vbg}
 N -1270 -10 -1260 -10 {
 lab=VSS}
 N -0 -570 20 -570 {
@@ -138,7 +138,7 @@ lab=VDD}
 N 440 -670 440 -500 {
 lab=VDD}
 N 280 -440 340 -440 {
-lab=vfeedback}
+lab=vd4}
 N 560 -420 620 -420 {
 lab=vcurrent_gate}
 N 440 -670 660 -670 {
@@ -148,7 +148,7 @@ lab=VSS}
 N 660 -390 660 -370 {
 lab=vd4}
 N 660 -310 660 -280 {
-lab=vfeedback}
+lab=vd4}
 N 660 -440 660 -390 {
 lab=vd4}
 N 600 -470 600 -420 {
@@ -158,9 +158,9 @@ lab=vcurrent_gate}
 N 660 -670 660 -500 {
 lab=VDD}
 N 840 -390 840 -370 {
-lab=vd5}
+lab=voutb2}
 N 840 -440 840 -390 {
-lab=vd5}
+lab=voutb2}
 N 620 -420 780 -420 {
 lab=vcurrent_gate}
 N 840 -670 840 -500 {
@@ -192,9 +192,9 @@ lab=VSS}
 N 410 -520 410 -500 {
 lab=Vota_bias1}
 N 660 -280 660 -250 {
-lab=vfeedback}
+lab=vd4}
 N 660 -250 660 -220 {
-lab=vfeedback}
+lab=vd4}
 N 840 -100 840 -70 {
 lab=voutb1}
 N 840 -200 840 -160 {
@@ -222,9 +222,9 @@ lab=VSS}
 N 790 -10 840 -10 {
 lab=VSS}
 N 660 -220 660 -160 {
-lab=vfeedback}
+lab=vd4}
 N 660 -160 660 -130 {
-lab=vfeedback}
+lab=vd4}
 N 0 -10 370 -10 {
 lab=VSS}
 N -220 -500 -220 -450 {
@@ -232,11 +232,11 @@ lab=vgate}
 N -220 -580 -220 -500 {
 lab=vgate}
 N 280 -310 280 -280 {
-lab=vfeedback}
+lab=vd4}
 N 280 -400 280 -310 {
-lab=vfeedback}
+lab=vd4}
 N 280 -440 280 -400 {
-lab=vfeedback}
+lab=vd4}
 N 510 -420 560 -420 {
 lab=vcurrent_gate}
 N 780 -420 800 -420 {
@@ -244,7 +244,7 @@ lab=vcurrent_gate}
 N 800 -470 800 -420 {
 lab=vcurrent_gate}
 N -170 -900 -170 -860 {
-lab=#net6}
+lab=#net1}
 N -250 -830 -210 -830 {
 lab=porst}
 N -250 -930 -250 -830 {
@@ -254,17 +254,17 @@ lab=porst}
 N -170 -990 -170 -960 {
 lab=VDD}
 N -30 -900 -30 -860 {
-lab=#net7}
+lab=#net2}
 N -30 -990 -30 -960 {
 lab=VDD}
 N -80 -830 -70 -830 {
-lab=#net6}
+lab=#net1}
 N -80 -930 -80 -830 {
-lab=#net6}
+lab=#net1}
 N -80 -930 -70 -930 {
-lab=#net6}
+lab=#net1}
 N -170 -880 -80 -880 {
-lab=#net6}
+lab=#net1}
 N -170 -990 -30 -990 {
 lab=VDD}
 N -170 -800 -170 -780 {
@@ -308,19 +308,19 @@ lab=porst_buff}
 N 140 -880 160 -880 {
 lab=porst_buff}
 N -30 -880 80 -880 {
-lab=#net7}
+lab=#net2}
 N 160 -780 160 -750 {
 lab=VSS}
 N 840 -260 840 -200 {
 lab=voutb2}
 N 1060 -100 1060 -70 {
-lab=#net8}
+lab=#net3}
 N 910 -10 1060 -10 {
 lab=VSS}
 N 1060 -10 1230 -10 {
 lab=VSS}
 N 1230 -100 1230 -70 {
-lab=#net9}
+lab=#net4}
 N 1060 -200 1060 -160 {
 lab=Iout0}
 N 1230 -200 1230 -160 {
@@ -352,11 +352,11 @@ lab=VSS}
 N 1230 -10 1260 -10 {
 lab=VSS}
 N 280 -280 660 -280 {
-lab=vfeedback}
+lab=vd4}
 N -1310 -10 -1270 -10 {
 lab=VSS}
 N 1400 -100 1400 -70 {
-lab=#net10}
+lab=#net5}
 N 1400 -200 1400 -160 {
 lab=Iout2}
 N 1330 -40 1360 -40 {
@@ -376,7 +376,7 @@ lab=VSS}
 N 1260 -10 1400 -10 {
 lab=VSS}
 N 1610 -100 1610 -70 {
-lab=#net11}
+lab=#net6}
 N 1610 -200 1610 -160 {
 lab=Iout3}
 N 1540 -40 1570 -40 {
@@ -394,7 +394,7 @@ lab=VSS}
 N 1610 -10 1640 -10 {
 lab=VSS}
 N 1780 -100 1780 -70 {
-lab=#net12}
+lab=#net7}
 N 1780 -200 1780 -160 {
 lab=Iout4}
 N 1710 -40 1740 -40 {
@@ -416,7 +416,7 @@ lab=VSS}
 N 1430 -10 1610 -10 {
 lab=VSS}
 N 1970 -100 1970 -70 {
-lab=#net13}
+lab=#net8}
 N 1970 -200 1970 -160 {
 lab=Iout5}
 N 1900 -40 1930 -40 {
@@ -434,7 +434,7 @@ lab=VSS}
 N 1970 -10 2000 -10 {
 lab=VSS}
 N 2140 -100 2140 -70 {
-lab=#net14}
+lab=#net9}
 N 2140 -200 2140 -160 {
 lab=Iout6}
 N 2070 -40 2100 -40 {
@@ -456,7 +456,7 @@ lab=VSS}
 N 1810 -10 1970 -10 {
 lab=VSS}
 N 470 -160 660 -160 {
-lab=vfeedback}
+lab=vd4}
 N 170 -160 170 -10 {
 lab=VSS}
 N 200 -140 260 -140 {
@@ -498,11 +498,11 @@ lab=VSS}
 N 2170 -100 2170 -40 {
 lab=VSS}
 N 660 -130 660 -80 {
-lab=vfeedback}
+lab=vd4}
 N 610 -80 660 -80 {
-lab=vfeedback}
+lab=vd4}
 N 530 -80 550 -80 {
-lab=#net15}
+lab=#net10}
 N 440 -80 470 -80 {
 lab=VSS}
 N 440 -80 440 -10 {
@@ -512,7 +512,7 @@ lab=VSS}
 N 580 -60 580 -10 {
 lab=VSS}
 N 1360 -400 1360 -370 {
-lab=#net16}
+lab=#net11}
 N 1290 -340 1320 -340 {
 lab=VSS}
 N 1290 -430 1320 -430 {
@@ -563,23 +563,33 @@ N 1580 -610 1580 -550 {
 lab=VDD}
 N 1550 -610 1580 -610 {
 lab=VDD}
+N -1270 -470 -1270 -410 {
+lab=Vota_bias1}
+N -970 -310 -970 -250 {
+lab=Va}
+N -970 -480 -970 -420 {
+lab=Va}
+N -510 -310 -510 -250 {
+lab=Vb}
+N -510 -470 -510 -410 {
+lab=Vb}
+N 0 -520 0 -460 {
+lab=Vbg}
+N 660 -370 660 -310 {
+lab=vd4}
+N 840 -370 840 -310 {
+lab=voutb2}
 C {sky130_fd_pr/pnp_05v5.sym} -950 -70 0 1 {name=Q2
 model=pnp_05v5_W3p40L3p40
 spiceprefix=X
 }
 C {devices/lab_pin.sym} -900 -330 3 0 {name=l5 lab=Va}
 C {devices/lab_pin.sym} -620 -330 3 0 {name=l6 lab=Vb}
-C {devices/ammeter.sym} -510 -280 0 0 {name=Vr2 current=4.3334e-06}
-C {devices/ammeter.sym} -970 -450 0 0 {name=Vm1 current=1.0057e-05}
-C {devices/ammeter.sym} -510 -440 0 0 {name=Vm2 current=1.0057e-05}
-C {devices/ammeter.sym} 0 -490 0 0 {name=Vm3 current=1.0239e-05}
-C {devices/ammeter.sym} -970 -280 0 0 {name=Vq2 current=4.3346e-06}
 C {sky130_fd_pr/pnp_05v5.sym} -490 -70 0 1 {name=Q1
 model="pnp_05v5_W3p40L3p40 m=34"
 spiceprefix=X
 }
 C {devices/lab_pin.sym} -510 -140 0 0 {name=l4 lab=vbneg}
-C {devices/lab_pin.sym} -970 -220 2 0 {name=l10 lab=Veb}
 C {devices/lab_wire.sym} -820 -580 0 0 {name=l11 lab=vgate}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} -1290 -40 0 0 {name=Mota_bias_n
 L=4
@@ -651,21 +661,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_lvt
 spiceprefix=X
 }
-C {devices/ngspice_probe.sym} -970 -330 0 0 {name=r1}
-C {devices/ngspice_probe.sym} -510 -330 0 0 {name=r2}
-C {devices/ngspice_probe.sym} -1270 -320 0 0 {name=r3}
-C {devices/ngspice_probe.sym} -820 -580 0 0 {name=r5}
 C {devices/ngspice_probe.sym} -510 -140 0 0 {name=r9}
-C {devices/ngspice_get_value.sym} -1270 -440 0 0 {name=r16 node=i(@m.xm13.msky130_fd_pr__pfet_01v8_lvt[id])
-descr="I="}
-C {devices/ngspice_get_value.sym} -1250 -500 0 0 {name=r14 node=@m.xm13.msky130_fd_pr__pfet_01v8_lvt[gm]
-descr="gm="}
-C {devices/ngspice_get_value.sym} -950 -500 0 0 {name=r20 node=@m.xm1.msky130_fd_pr__pfet_01v8_lvt[gm]
-descr="gm="}
-C {devices/ngspice_get_value.sym} -540 -500 0 1 {name=r21 node=@m.xm2.msky130_fd_pr__pfet_01v8_lvt[gm]
-descr="gm="}
-C {devices/ngspice_get_value.sym} 10 -530 0 0 {name=r22 node=@m.xm3.msky130_fd_pr__pfet_01v8_lvt[gm]
-descr="gm="}
 C {devices/lab_wire.sym} -620 -460 0 1 {name=l14 lab=VDD}
 C {devices/lab_pin.sym} 0 -190 0 0 {name=l15 lab=vbe3}
 C {sky130_fd_pr/pnp_05v5.sym} 20 -110 0 1 {name=Q3
@@ -675,7 +671,6 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} -1310 -70 2 1 {name=l2 lab=Vota_bias1}
 C {devices/lab_pin.sym} -640 -430 2 0 {name=l18 lab=Vota_bias1}
-C {devices/ammeter.sym} -1270 -440 0 0 {name=Vmbias1 current=1.0057e-05}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} -240 -420 0 0 {name=Mpdn
 L=0.5
 W=1.5
@@ -705,7 +700,6 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_lvt
 spiceprefix=X
 }
-C {devices/ammeter.sym} 660 -340 0 0 {name=Vm4 current=1.0239e-05}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 820 -470 0 0 {name=M8
 L=1
 W=1
@@ -720,7 +714,6 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_lvt
 spiceprefix=X
 }
-C {devices/ammeter.sym} 840 -340 0 0 {name=Vm5 current=1.0239e-05}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 860 -40 0 1 {name=M4
 L=2
 W=8
@@ -735,7 +728,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 840 -410 0 1 {name=l24 lab=vd5}
+C {devices/lab_pin.sym} 840 -410 0 1 {name=l24 lab=voutb2}
 C {devices/lab_pin.sym} 660 -400 0 1 {name=l25 lab=vd4}
 C {devices/lab_pin.sym} 410 -520 2 1 {name=l19 lab=Vota_bias1}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 860 -130 0 1 {name=M5
@@ -754,7 +747,6 @@ spiceprefix=X
 }
 C {lab_wire.sym} 330 -400 0 0 {name=l7 sig_type=std_logic lab=Vbg}
 C {devices/lab_pin.sym} 600 -470 0 0 {name=l21 lab=vcurrent_gate}
-C {devices/lab_pin.sym} 660 -270 0 1 {name=l29 lab=vfeedback}
 C {sky130_fd_pr/nfet_01v8.sym} -190 -830 0 0 {name=Minv_n
 L=0.5
 W=1.5
@@ -814,7 +806,6 @@ spiceprefix=X
 C {lab_wire.sym} -170 -990 0 0 {name=l28 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 160 -880 0 1 {name=l31 lab=porst_buff}
 C {devices/lab_pin.sym} 910 -70 0 1 {name=l34 lab=voutb1}
-C {devices/lab_pin.sym} 910 -170 0 1 {name=l35 lab=voutb2}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 1040 -40 0 0 {name=M15
 L=2
 W=8
