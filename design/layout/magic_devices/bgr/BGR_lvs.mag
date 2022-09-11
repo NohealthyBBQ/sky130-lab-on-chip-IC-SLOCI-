@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1662869046
+timestamp 1662870854
 << nwell >>
 rect -8726 10225 -8100 11452
 << locali >>
@@ -412,5 +412,5 @@ flabel metal1 -9200 -2991 -9100 5271 0 FreeSans 800 0 0 0 Vota_bias1
 flabel space -11280 2300 1400 2500 0 FreeSans 1600 0 0 0 va
 flabel metal3 6920 -3800 7040 -1540 0 FreeSans 1600 0 0 0 vd4
 flabel space 28400 -1800 43000 3800 0 FreeSans 12800 0 0 0 core
-flabel metal2 6420 320 6600 4600 0 FreeSans 3200 0 0 0 vd5
+flabel metal2 6420 320 6600 4600 0 FreeSans 3200 0 0 0 voutb2
 << end >>
