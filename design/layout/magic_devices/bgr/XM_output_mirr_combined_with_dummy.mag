@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1662865492
+timestamp 1662867857
 << locali >>
 rect -8750 6930 -8740 6960
 rect -8750 6020 -8740 6050
@@ -98,6 +98,8 @@ rect -8750 -3610 17700 -3600
 rect -8750 -3640 -8670 -3610
 rect 17610 -3640 17700 -3610
 rect -8750 -3650 17700 -3640
+<< metal2 >>
+rect 150 180 8800 210
 use XM_output_mirr_combined  XM_output_mirr_combined_0
 timestamp 1662815693
 transform 1 0 0 0 1 0
