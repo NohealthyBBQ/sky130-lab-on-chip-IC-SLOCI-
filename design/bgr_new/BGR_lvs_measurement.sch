@@ -563,6 +563,7 @@ N 1580 -610 1580 -550 {
 lab=VDD}
 N 1550 -610 1580 -610 {
 lab=VDD}
+N 1360 -380 1390 -380 {}
 C {sky130_fd_pr/pnp_05v5.sym} -950 -70 0 1 {name=Q2
 model=pnp_05v5_W3p40L3p40
 spiceprefix=X

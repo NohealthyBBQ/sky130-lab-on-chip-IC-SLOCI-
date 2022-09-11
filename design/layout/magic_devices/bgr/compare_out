@@ -200,30 +200,199 @@ sky130_fd_pr__pnp_05v5_W3p40L3p40 (50->4)  |sky130_fd_pr__pnp_05v5_W3p40L3p40 (3
 opamp_realcomp3_usefinger (2)              |opamp_realcomp3_usefinger (2)              
 sky130_fd_pr__nfet_01v8_lvt (1153->18)     |sky130_fd_pr__nfet_01v8_lvt (257->18)      
 Number of devices: 42                      |Number of devices: 42                      
-Number of nets: 31 **Mismatch**            |Number of nets: 32 **Mismatch**            
+Number of nets: 31                         |Number of nets: 31                         
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: BGR_lvs                         |Circuit 2: BGR_lvs                         
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+Circuits match correctly.
+There were property errors.
+XM_otabias_nmos_0//sky130_fd_pr__nfet_01v8_lvt_WLEYVS_0/sky130_fd_pr__nfet_01v8_lvt:0 vs. sky130_fd_pr__nfet_01v8_lvt:Mota_bias_n:
+ l circuit1: 5   circuit2: 4   (delta=22.2%, cutoff=1%)
+ w circuit1: 4   circuit2: 5   (delta=22.2%, cutoff=7%)
+XM_output_mirr_combined_with_dummy_0//XM_output_mirr_combined_1//XM_output_mirr_0//sky130_fd_pr__nfet_01v8_lvt_64DJ5N_0/sky130_fd_pr__nfet_01v8_lvt:0 vs. sky130_fd_pr__nfet_01v8_lvt:M1:
+ w circuit1: 8192   circuit2: 1024   (delta=156%, cutoff=7%)
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance /XM_bjt_out_0//sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[0|0]/sky130_fd_pr__pnp_05v5_W3p40L3p40:0 network:
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance /XM_bjt_out_0//sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[0|0]/sky130_fd_pr__pnp_05v5_W3p40L3p40:0 network:
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance /XM_bjt_out_0//sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[0|0]/sky130_fd_pr__pnp_05v5_W3p40L3p40:0 network:
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance /XM_bjt_out_0//sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[0|0]/sky130_fd_pr__pnp_05v5_W3p40L3p40:0 network:
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance /XM_bjt_out_0//sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[0|0]/sky130_fd_pr__pnp_05v5_W3p40L3p40:0 network:
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance /XM_bjt_out_0//sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[0|0]/sky130_fd_pr__pnp_05v5_W3p40L3p40:0 network:
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance /XM_bjt_out_0//sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[0|0]/sky130_fd_pr__pnp_05v5_W3p40L3p40:0 network:
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance /XM_bjt_out_0//sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[0|0]/sky130_fd_pr__pnp_05v5_W3p40L3p40:0 network:
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+XM_bjt_out_0//sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[0|0]/sky130_fd_pr__pnp_05v5_W3p40L3p40:0 vs. sky130_fd_pr__pnp_05v5_W3p40L3p40:Q4:
+ M circuit1: 1   circuit2: 80   (delta=79, cutoff=0)
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance /XM_bjt_out_0//sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[0|0]/sky130_fd_pr__pnp_05v5_W3p40L3p40:0 network:
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance /XM_bjt_out_0//sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0[0|0]/sky130_fd_pr__pnp_05v5_W3p40L3p40:0 network:
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
+  M = 1
 
+Subcircuit pins:
+Circuit 1: BGR_lvs                         |Circuit 2: BGR_lvs                         
+-------------------------------------------|-------------------------------------------
+Iout0                                      |Iout0                                      
+Iout5                                      |Iout5                                      
+Iout1                                      |Iout1                                      
+Iout6                                      |Iout6                                      
+Iout2                                      |Iout2                                      
+Iout3                                      |Iout3                                      
+Iout4                                      |Iout4                                      
+VDD                                        |VDD                                        
+porst                                      |porst                                      
+vbg                                        |Vbg                                        
+VSS                                        |VSS                                        
 ---------------------------------------------------------------------------------------
-Net: VSS                                   |Net: VSS                                   
-  sky130_fd_pr__pnp_05v5_W3p40L3p40/1 = 4  |  sky130_fd_pr__pnp_05v5_W3p40L3p40/1 = 4  
-  sky130_fd_pr__pnp_05v5_W3p40L3p40/2 = 4  |  sky130_fd_pr__pnp_05v5_W3p40L3p40/2 = 4  
-  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 11   |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 10   
-  sky130_fd_pr__nfet_01v8_lvt/4 = 18       |  sky130_fd_pr__nfet_01v8_lvt/4 = 18       
-  sky130_fd_pr__nfet_01v8/(1|3) = 3        |  sky130_fd_pr__nfet_01v8/(1|3) = 3        
-  sky130_fd_pr__nfet_01v8/4 = 3            |  sky130_fd_pr__nfet_01v8/4 = 3            
-  sky130_fd_pr__cap_mim_m3_1/1 = 1         |  sky130_fd_pr__cap_mim_m3_1/1 = 1         
-  opamp_realcomp3_usefinger/vss = 2        |  opamp_realcomp3_usefinger/vss = 2        
-  sky130_fd_pr__res_xhigh_po_5p73/(1|2) =  |  sky130_fd_pr__res_xhigh_po_5p73/(1|2) =  
-  sky130_fd_pr__res_xhigh_po_5p73/3 = 1    |  sky130_fd_pr__res_xhigh_po_5p73/3 = 1    
-  sky130_fd_pr__res_high_po_1p41/3 = 4     |  sky130_fd_pr__res_high_po_1p41/3 = 4     
-  sky130_fd_pr__pnp_05v5_W3p40L3p40/3 = 1  |  sky130_fd_pr__pnp_05v5_W3p40L3p40/3 = 1  
-  sky130_fd_pr__res_high_po_1p41/(1|2) = 1 |  sky130_fd_pr__res_high_po_1p41/(1|2) = 1 
-  sky130_fd_pr__nfet_01v8_lvt/2 = 1        |  sky130_fd_pr__nfet_01v8_lvt/2 = 1        
-                                           |                                           
-(no matching net)                          |Net: net11                                 
-                                           |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    
----------------------------------------------------------------------------------------
-Netlists do not match.
-Netlists do not match.
+Cell pin lists are equivalent.
+Device classes BGR_lvs and BGR_lvs are equivalent.
+Circuits match uniquely.
+Property errors were found.
+The following cells had property errors:
+ BGR_lvs

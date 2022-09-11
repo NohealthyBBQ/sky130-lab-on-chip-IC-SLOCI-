@@ -512,7 +512,7 @@ lab=VSS}
 N 580 -60 580 -10 {
 lab=VSS}
 N 1360 -400 1360 -370 {
-lab=#net11}
+lab=VSS}
 N 1290 -340 1320 -340 {
 lab=VSS}
 N 1290 -430 1320 -430 {
@@ -579,6 +579,8 @@ N 660 -370 660 -310 {
 lab=vd4}
 N 840 -370 840 -310 {
 lab=voutb2}
+N 1360 -380 1390 -380 {
+lab=VSS}
 C {sky130_fd_pr/pnp_05v5.sym} -950 -70 0 1 {name=Q2
 model=pnp_05v5_W3p40L3p40
 spiceprefix=X
@@ -851,7 +853,7 @@ spiceprefix=X
 C {opin.sym} 1060 -200 0 0 {name=p1 lab=Iout0}
 C {devices/lab_pin.sym} 1170 -40 0 0 {name=l36 lab=voutb1}
 C {devices/lab_pin.sym} 1170 -130 0 0 {name=l37 lab=voutb2}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 160 -810 2 0 {name=C_porst model=cap_mim_m3_1 W=16 L=20 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 160 -810 2 0 {name=C_porst model=cap_mim_m3_1 W=23 L=5.8 MF=1 spiceprefix=X}
 C {iopin.sym} -1270 -670 0 1 {name=p2 lab=VDD}
 C {iopin.sym} -1310 -10 0 1 {name=p3 lab=VSS}
 C {devices/lab_pin.sym} -80 -780 3 0 {name=l1 lab=VSS}
