@@ -543,6 +543,26 @@ N 1360 -460 1390 -460 {
 lab=VSS}
 N 1390 -460 1390 -430 {
 lab=VSS}
+N 1550 -520 1550 -480 {
+lab=VDD}
+N 1480 -480 1550 -480 {
+lab=VDD}
+N 1480 -550 1480 -480 {
+lab=VDD}
+N 1480 -550 1510 -550 {
+lab=VDD}
+N 1510 -610 1510 -550 {
+lab=VDD}
+N 1510 -610 1550 -610 {
+lab=VDD}
+N 1550 -610 1550 -580 {
+lab=VDD}
+N 1550 -550 1580 -550 {
+lab=VDD}
+N 1580 -610 1580 -550 {
+lab=VDD}
+N 1550 -610 1580 -610 {
+lab=VDD}
 C {sky130_fd_pr/pnp_05v5.sym} -950 -70 0 1 {name=Q2
 model=pnp_05v5_W3p40L3p40
 spiceprefix=X
@@ -1117,3 +1137,18 @@ model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {devices/lab_pin.sym} 1290 -310 0 0 {name=l39 lab=VSS}
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 1530 -550 0 0 {name=M3
+L=1
+W=1
+nf=1
+mult=80
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8_lvt
+spiceprefix=X
+}
+C {devices/lab_wire.sym} 1550 -610 0 1 {name=l40 lab=VDD}
