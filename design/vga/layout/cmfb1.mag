@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1662869159
+timestamp 1662938211
 << locali >>
 rect -6950 -6890 -6760 -6850
 rect -6860 -6970 -6820 -6890
@@ -271,11 +271,18 @@ transform 1 0 -5595 0 1 -4152
 box -739 -1190 739 1190
 << labels >>
 rlabel metal2 -7300 -5650 -7300 -5650 1 vdd
+port 6 n
 rlabel metal3 -7188 -7740 -7188 -7740 5 vss
+port 5 s
 rlabel metal1 -6020 -7760 -6020 -7760 5 vinn
+port 1 s
 rlabel metal1 -7320 -6770 -7320 -6770 7 vref
+port 2 w
 rlabel metal4 -2830 -3070 -2830 -3070 1 vc
+port 3 n
 rlabel metal1 -7510 -7320 -7510 -7320 7 vbcm
+port 4 w
 rlabel metal1 -6394 -3420 -6394 -3420 7 vinp
+port 0 w
 rlabel metal1 -7010 -5440 -7010 -5440 7 vcm
 << end >>
