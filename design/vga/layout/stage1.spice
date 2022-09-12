@@ -1,9 +1,5 @@
 * NGSPICE file created from stage1.ext - technology: sky130A
 
-.subckt sky130_fd_pr__res_xhigh_po_5p73_4C7XCD a_n573_n491# a_n573_59# a_n703_n621#
-X0 a_n573_n491# a_n573_59# a_n703_n621# sky130_fd_pr__res_xhigh_po_5p73 l=590000u
-.ends
-
 .subckt sky130_fd_pr__nfet_01v8_lvt_FKGFGD a_1791_122# a_447_122# a_n1905_n100# a_n2433_122#
 + a_591_n100# a_n657_n100# a_n225_n188# a_1407_122# a_2271_n188# a_n321_122# a_207_n100#
 + a_1743_n100# a_927_n188# a_1359_n100# a_2703_n100# a_1311_n188# a_2751_122# a_2319_n100#
@@ -86,8 +82,8 @@ X59 a_2799_n100# a_2751_122# a_2703_n100# a_n3059_n274# sky130_fd_pr__nfet_01v8_
 X60 a_2895_n100# a_2847_n188# a_2799_n100# a_n3059_n274# sky130_fd_pr__nfet_01v8_lvt ad=3.1e+11p pd=2.62e+06u as=0p ps=0u w=1e+06u l=150000u
 .ends
 
-.subckt sky130_fd_pr__res_xhigh_po_5p73_QP6N54 a_n573_150# a_n573_n582# a_n703_n712#
-X0 a_n573_n582# a_n573_150# a_n703_n712# sky130_fd_pr__res_xhigh_po_5p73 l=1.5e+06u
+.subckt sky130_fd_pr__res_xhigh_po_5p73_4C7XCD a_n573_n491# a_n573_59# a_n703_n621#
+X0 a_n573_n491# a_n573_59# a_n703_n621# sky130_fd_pr__res_xhigh_po_5p73 l=590000u
 .ends
 
 .subckt sky130_fd_pr__nfet_01v8_lvt_G3ZQK6 a_543_n100# a_7455_n100# a_n609_n100# a_159_n100#
@@ -317,12 +313,16 @@ X170 a_3615_n100# a_3567_122# a_3519_n100# a_n8387_n274# sky130_fd_pr__nfet_01v8
 X171 a_3327_n100# a_3279_n188# a_3231_n100# a_n8387_n274# sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
 .ends
 
-.subckt sky130_fd_pr__nfet_01v8_lvt_648S5X a_n73_n100# a_n33_n188# a_15_n100# a_n175_n274#
+.subckt sky130_fd_pr__res_xhigh_po_5p73_QP6N54 a_n573_150# a_n573_n582# a_n703_n712#
+X0 a_n573_n582# a_n573_150# a_n703_n712# sky130_fd_pr__res_xhigh_po_5p73 l=1.5e+06u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_lvt_6H2JYD a_n73_n100# a_n33_n188# a_15_n100# a_n175_n274#
 X0 a_15_n100# a_n33_n188# a_n73_n100# a_n175_n274# sky130_fd_pr__nfet_01v8_lvt ad=2.9e+11p pd=2.58e+06u as=2.9e+11p ps=2.58e+06u w=1e+06u l=150000u
 .ends
 
-.subckt cons1 voutp vc1 vc2 vcsw vinp vinn m1_47244_n7752# voutn vd22 vd21 vss
-Xsky130_fd_pr__res_xhigh_po_5p73_4C7XCD_0 vd22 m1_47244_n7752# vss sky130_fd_pr__res_xhigh_po_5p73_4C7XCD
+.subckt cons_cw voutp vc1 vc2 vinp vinn m1_50970_n6456# m1_47244_n7752# voutn vd22
++ vd21 vss
 XXM23 vinn vinn vd22 vinn vd22 a_53403_n7310# vinn vinn vinn vinn vd22 vd22 vinn vd22
 + vd22 vinn vinn vd22 a_53403_n7310# vinn vinn vinn a_53403_n7310# vss vd22 vd22 a_53403_n7310#
 + a_53403_n7310# a_53403_n7310# vinn vinn vd22 vd22 vinn vd22 vd22 a_53403_n7310#
@@ -335,7 +335,7 @@ XXM23 vinn vinn vd22 vinn vd22 a_53403_n7310# vinn vinn vinn vinn vd22 vd22 vinn
 + vinn vinn vd22 vinn a_53403_n7310# vinn a_53403_n7310# vinn a_53403_n7310# vinn
 + vinn vinn vinn a_53403_n7310# vinn vd22 a_53403_n7310# vinn a_53403_n7310# a_53403_n7310#
 + vd22 sky130_fd_pr__nfet_01v8_lvt_FKGFGD
-Xsky130_fd_pr__res_xhigh_po_5p73_QP6N54_0 voutn vd22 vss sky130_fd_pr__res_xhigh_po_5p73_QP6N54
+Xsky130_fd_pr__res_xhigh_po_5p73_4C7XCD_0 vd22 m1_47244_n7752# vss sky130_fd_pr__res_xhigh_po_5p73_4C7XCD
 XXM24 m1_49981_n5637# m1_49981_n5637# m1_49981_n5637# m1_49981_n5637# m1_49981_n5637#
 + m1_49981_n5637# vc2 vc2 m1_49981_n5637# m1_49981_n5637# vc2 m1_49981_n5637# vc2
 + vc2 m1_49981_n5637# m1_49981_n5637# m1_49981_n5637# vc2 vc2 vc2 vc2 m1_49981_n5637#
@@ -395,10 +395,11 @@ XXM25 vss vss vss vss vss vss vc1 vc1 vss vss vc1 vss vc1 vc1 vss vss vss vc1 vc
 + vc1 a_53403_n7310# a_53403_n7310# a_53403_n7310# a_53403_n7310# vc1 vc1 a_53403_n7310#
 + a_53403_n7310# a_53403_n7310# vc1 vss a_53403_n7310# vc1 vc1 vc1 vc1 vc1 vc1 vc1
 + vss vc1 vc1 sky130_fd_pr__nfet_01v8_lvt_G3ZQK6
-XXM36 voutn vcsw vd22 vss sky130_fd_pr__nfet_01v8_lvt_648S5X
-XXM35 voutp vcsw vd21 vss sky130_fd_pr__nfet_01v8_lvt_648S5X
+Xsky130_fd_pr__res_xhigh_po_5p73_QP6N54_0 voutn vd22 vss sky130_fd_pr__res_xhigh_po_5p73_QP6N54
 XXR20 m1_47244_n7752# voutp vss sky130_fd_pr__res_xhigh_po_5p73_4C7XCD
 XXR21 voutp vd21 vss sky130_fd_pr__res_xhigh_po_5p73_QP6N54
+Xsky130_fd_pr__nfet_01v8_lvt_6H2JYD_0 voutp m1_50970_n6456# vd21 vss sky130_fd_pr__nfet_01v8_lvt_6H2JYD
+Xsky130_fd_pr__nfet_01v8_lvt_6H2JYD_1 voutn m1_50970_n6456# vd22 vss sky130_fd_pr__nfet_01v8_lvt_6H2JYD
 XXR22 voutn m1_47244_n7752# vss sky130_fd_pr__res_xhigh_po_5p73_4C7XCD
 XXR19 m1_47244_n7752# vd21 vss sky130_fd_pr__res_xhigh_po_5p73_4C7XCD
 XXM20 vinp vinp vd21 vinp vd21 a_53403_n7310# vinp vinp vinp vinp vd21 vd21 vinp vd21
@@ -520,8 +521,8 @@ XXM55 m1_n6520_n6580# vcm vss m1_n7060_n6640# sky130_fd_pr__nfet_01v8_lvt_EA9ZG2
 .ends
 
 .subckt stage1
-Xcons1_0 vout2p vo21 vo22 cons1_0/vcsw vout1p vout1n cmfb1_1/vdd vout2n vd22 vd21
-+ VSUBS cons1
+Xcons_cw_0 vout2p vo21 vo22 vout1p vout1n m1_110_1770# cmfb1_1/vdd vout2n vd22 vd21
++ VSUBS cons_cw
 Xcmfb1_0 vout2p vref vo22 cmfb1_1/vbcm cmfb1_1/vdd vout2n VSUBS cmfb1
 Xcmfb1_1 vd21 vref vo21 cmfb1_1/vbcm cmfb1_1/vdd vd22 VSUBS cmfb1
 .ends
